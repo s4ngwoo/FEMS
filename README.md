@@ -9,6 +9,9 @@ docker build
 	-t FEMS 
 	.
 ```
+Build image on the same directory of dockerfile with tag name `FEMS`.
+This command should be executed on the same directory of dockerfile.
+
 
 **Run Docker Container**
 ```docker
@@ -18,6 +21,11 @@ docker run
 	-p 8000:8000
 	FEMS
 ```
+Run container based on the Docker Image above.
+- `-it` interactive, tty option
+- `--rm` remove container when the container exited
+- `-p 8000:8000` let contanier opens port 8000 in and out
+- `FEMS` name of the base image 
 
 # Poetry
 
