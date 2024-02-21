@@ -8,22 +8,16 @@ WORKDIR /app
 RUN pip install poetry
 
 # 프로젝트 소스 코드 복사
-COPY . .
+COPY ./pyproject.toml .
 
-# poetry를 사용하여 의존성 설치
+# Install dependencies using poetry
 RUN poetry install
 
-# 개발 환경 설정 파일 복사
-#COPY .env.dev .env
-
 # Run Django startproject using peotry executable
-RUN poetry run django-admin startproject myproject
-
-# 장고 프로젝트 생성
-# RUN django-admin startproject myproject .
+RUN poetry run django-admin startproject FEMS
 
 # Set the working directory for subsequent commands
-WORKDIR /app/myproject
+WORKDIR /app/FEMS
 
 # 개발 서버 실행
 CMD ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
