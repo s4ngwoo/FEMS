@@ -19,6 +19,8 @@ docker run
 	-it
 	--rm
 	-p 8000:8000
+	-v $(pwd)/core:/app/FEMS/FEMS/
+	--name FEMS
 	FEMS
 ```
 Run container based on the Docker Image above.
