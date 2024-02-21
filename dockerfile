@@ -19,6 +19,8 @@ RUN poetry run django-admin startproject FEMS
 # Set the working directory for subsequent commands
 WORKDIR /app/FEMS
 
+RUN mkdir templates
+
 # Start app
 RUN poetry run django-admin startapp FEMS_app
 
