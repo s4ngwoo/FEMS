@@ -17,7 +17,7 @@ docker run \
   -it \
   --rm \
   -p 8000:8000 \ 
-  -v $(pwd)/core:/app/FEMS/FEMS/ 
+  -v $(pwd)/core:/app/FEMS/FEMS/ \
   --name FEMS \
   fems
 ```
