@@ -6,8 +6,8 @@
 ## Build Docker Image	
 ```docker
 docker build \
-	-t fems \ 
-	.
+  -t fems \ 
+  .
 ```
 Build image on the same directory of dockerfile with tag name `FEMS`.
 This command should be executed on the same directory of dockerfile.
@@ -16,12 +16,12 @@ This command should be executed on the same directory of dockerfile.
 ## Run Docker Container
 ```docker
 docker run \
-	-it \
-	--rm \
-	-p 8000:8000 \ 
-	-v $(pwd)/core:/app/FEMS/FEMS/ \
-	--name FEMS \
-	fems
+  -it \
+  --rm \
+  -p 8000:8000 \ 
+  -v $(pwd)/core:/app/FEMS/FEMS/ 
+  --name FEMS \
+  fems
 ```
 Run container based on the Docker Image above.
 - `-it` interactive, tty option
