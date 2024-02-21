@@ -3,6 +3,23 @@
 # Sitemap
 
 # Docker
+**Build Docker Image**	
+```docker
+docker build
+	-t FEMS 
+	.
+```
+
+**Run Docker Container**
+```docker
+docker run 	
+	-it
+	--rm
+	-p 8000:8000
+	FEMS
+```
+
+# Poetry
 
 # settings.py
 
