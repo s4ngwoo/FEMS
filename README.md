@@ -5,9 +5,7 @@
 # Docker
 ## Build Docker Image	
 ```docker
-docker build \
-  -t fems \ 
-  .
+docker build -t fems .
 ```
 Build image on the same directory of dockerfile with tag name `FEMS`.
 This command should be executed on the same directory of dockerfile.
