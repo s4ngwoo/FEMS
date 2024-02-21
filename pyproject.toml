@@ -7,6 +7,11 @@ authors = ["이상우 <s4ngwoo.lee@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 django = "^5.0"
+bs4 = "^0..1"
+beautifulsoup4 = "^4.12.2"
+gunicorn = "^20.1.0"0
+django-extensions = "^3.2.3"
+ipython = "^8.14.0"
 
 [tool.poetry.dev-dependencies]
 
