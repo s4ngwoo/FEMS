@@ -18,6 +18,8 @@ docker run \
   --rm \
   -p 8000:8000 \
   -v $(pwd)/core:/app/FEMS/FEMS/ \
+  -v $(pwd)/templates:/app/FEMS/templates/ \
+  -v $(pwd)/static:/app/FEMS/static/ \
   --name FEMS \
   fems
 ```
