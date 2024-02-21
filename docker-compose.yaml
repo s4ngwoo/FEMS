@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./templates:/app/FEMS/templates
+      - ./static:/app/FEMS/static
+    environment:
+      - DJANGO_SETTINGS_MODULE=myproject.settings.dev
