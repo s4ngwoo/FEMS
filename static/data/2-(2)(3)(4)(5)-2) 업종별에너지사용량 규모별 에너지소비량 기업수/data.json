@@ -1,0 +1,110 @@
+{
+    "food": {
+		"2~5k toe": {
+			"fuel": 130153,
+            "Electricity": 104388,
+            "Number of Companies": 127
+		},
+		"5~10k toe": {
+			"fuel": 152612,
+			"Electricity": 122318,
+			"Number of Companies": 76
+		},
+		"10~20k toe": {
+			"fuel": 155044,
+			"Electricity": 91423,
+			"Number of Companies": 31
+		},
+		"20~50k toe": {        
+			"fuel": 210845,
+			"Electricity": 85763,
+			"Number of Companies": 17
+		},
+		"50k toe이상": {
+			"fuel": 32411,
+			"Electricity": 40080,
+			"Number of Companies": 3
+		}
+    },
+    "paper": {
+        "2~5k toe": {
+            "fuel": 24222,
+            "Electricity": 38329,
+            "Number of Companies": 40
+        },
+        "5~10k toe": {
+            "fuel": 35091,
+            "Electricity": 42071,
+            "Number of Companies": 23
+        },
+        "10~20k toe": {
+            "fuel": 37686,
+            "Electricity": 32791,
+            "Number of Companies": 10
+        },
+        "20~50k toe": {
+            "fuel": 93517,
+            "Electricity": 164237,
+            "Number of Companies": 23
+        },
+        "50k toe이상": {
+            "fuel": 341302,
+            "Electricity": 337143,
+            "Number of Companies": 15
+        }
+    },
+    "pharma": {
+        "2~5k toe": {
+            "fuel": 24222,
+            "Electricity": 38329,
+            "Number of Companies": 40
+        },
+        "5~10k toe": {
+            "fuel": 35091,
+            "Electricity": 42071,
+            "Number of Companies": 23
+        },
+        "10~20k toe": {
+            "fuel": 37686,
+            "Electricity": 32791,
+            "Number of Companies": 10
+        },
+        "20~50k toe": {
+            "fuel": 93517,
+            "Electricity": 164237,
+            "Number of Companies": 23
+        },
+        "50k toe이상": {
+            "fuel": 341302,
+            "Electricity": 337143,
+            "Number of Companies": 15
+        }
+    },
+    "solvent": {
+        "2~5k toe": {
+            "fuel": 24222,
+            "Electricity": 38329,
+            "Number of Companies": 40
+        },
+        "5~10k toe": {
+            "fuel": 35091,
+            "Electricity": 42071,
+            "Number of Companies": 23
+        },
+        "10~20k toe": {
+            "fuel": 37686,
+            "Electricity": 32791,
+            "Number of Companies": 10
+        },
+        "20~50k toe": {
+            "fuel": 93517,
+            "Electricity": 164237,
+            "Number of Companies": 23
+        },
+        "50k toe이상": {
+            "fuel": 341302,
+            "Electricity": 337143,
+            "Number of Companies": 15
+        }
+    }
+}
