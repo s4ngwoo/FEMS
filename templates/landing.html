@@ -1,1 +1,22 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Main Page</title></head><body><h1>Welcome to the Main Page</h1></body></html>
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Main Page</title>
+	</head>
+	<body>
+		<h1>Welcome to the Main Page</h1>
+		<div id="dataContainer"></div>
+	</body>
+<script>
+    fetch("{% static 'data/2-(1)/2-(1-1)/data.json' %}")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.getElementById('dataContainer').innerText = JSON.stringify(data, null, 2);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+ 
+</html>
