@@ -9,7 +9,11 @@
 
 # How to load javascipt file in html?
 Put `{$ load static %}` on the first line of your html file.<br>
+
+
 And load it like this<br>
+
+
 `<script src="{% static 'test.js' %}"></script>`
 
 If you load `test.js`, it will load `static/test.js` file.<br>
