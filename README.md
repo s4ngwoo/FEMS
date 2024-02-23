@@ -20,6 +20,7 @@ docker run \
   -v $(pwd)/core:/app/FEMS/FEMS/ \
   -v $(pwd)/templates:/app/FEMS/templates/ \
   -v $(pwd)/static:/app/FEMS/static/ \
+  -v $(pwd)/FEMS_app:/app/FEMS/FEMS_app/ \
   --name FEMS \
   fems
 ```
@@ -30,6 +31,7 @@ Run container based on the Docker Image above.
 - `-v $(pwd)/core:/app/FEMS/FEMS/` bind mount core files
 - `-v $(pwd)/templates:/app/FEMS/templates/` bind mount html files
 - `-v $(pwd)/static:/app/FEMS/static/` bind mount js, cs, data files
+- `-v $(pwd)/FEMS_app:/app/FEMS/FEMS_app/` bind mount app
 - `FEMS` name of the base image 
 
 # Poetry
