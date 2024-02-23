@@ -13,7 +13,9 @@ And load it like this
 `<script src="{% static 'test.js' %}"></script>`
 
 If you load `test.js`, it will load `static/test.js` file.
+
 If you load `data/test.js`, it will load `static/data/test.js` file.
+
 If you load `data/2-(1)/2-(1-1)/test.js`, it will load `data/2-(1)/2-(1-1)/test.js` file.
 
 # How to load css in html?
