@@ -24,6 +24,7 @@ RUN mkdir static
 
 # Start app
 RUN poetry run django-admin startapp FEMS_app
+RUN poetry run python manage.py migrate
 
 # 개발 서버 실행
 CMD ["poetry", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]
