@@ -4,8 +4,9 @@
 1. install docker at your computer
 2. clone this repo
 3. build docker image based on `dockerfile` of this repo 
-	-> If don't know how to build docker container, 
+	-> If don't know how to build docker image, <a href="#user-content-build-docker-image">here</a>
 4. run docker container based on the image that you've made.
+	-> If don't know how to run a docker container, <a href="#user-content-build-docker-image">here</a>
 
 # How to load javascipt file in html?
 Put `{$ load static %}` on the first line of your html file.<br>
