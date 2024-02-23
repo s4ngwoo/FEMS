@@ -14,18 +14,26 @@ And load it like this
 
 If you load `test.js`, it will load `static/test.js` file.
 
+
 If you load `data/test.js`, it will load `static/data/test.js` file.
+
 
 If you load `data/2-(1)/2-(1-1)/test.js`, it will load `data/2-(1)/2-(1-1)/test.js` file.
 
 # How to load css in html?
 Same method to load css as js file does. 
+
+
 Put `{$ load static %}` on the first line of your html file.
+
+
 And load it like this
 `<lik rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">`
 
 # How to load data in javascript?
 Same method to load
+
+
 Let's look at this example.
 ```javascript
 fetch("{% static 'data/2-(1)/2-(1-1)/data.json' %}")
