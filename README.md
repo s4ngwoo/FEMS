@@ -8,32 +8,22 @@
 4. run docker container based on the image that you've made.
 
 # How to load javascipt file in html?
-Put `{$ load static %}` on the first line of your html file.
-And load it like this
+Put `{$ load static %}` on the first line of your html file.<br>
+And load it like this<br>
 `<script src="{% static 'test.js' %}"></script>`
 
-If you load `test.js`, it will load `static/test.js` file.
-
-
-If you load `data/test.js`, it will load `static/data/test.js` file.
-
-
+If you load `test.js`, it will load `static/test.js` file.<br>
+If you load `data/test.js`, it will load `static/data/test.js` file.<br>
 If you load `data/2-(1)/2-(1-1)/test.js`, it will load `data/2-(1)/2-(1-1)/test.js` file.
 
 # How to load css in html?
-Same method to load css as js file does. 
-
-
-Put `{$ load static %}` on the first line of your html file.
-
-
-And load it like this
+Same method to load css as js file does. <br>
+Put `{$ load static %}` on the first line of your html file.<br>
+And load it like this<br>
 `<lik rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">`
 
 # How to load data in javascript?
-Same method to load
-
-
+Same method to load<br>
 Let's look at this example.
 ```javascript
 fetch("{% static 'data/2-(1)/2-(1-1)/data.json' %}")
