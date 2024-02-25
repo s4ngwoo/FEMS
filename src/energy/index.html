@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEMS/energy</title>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header" onclick="window.location.href='/' ">
+      <img
+        src="../common/background.png"
+        alt="background"
+        class="headerBackground"
+      />
+      <p class="headerTitle main">HERCULES</p>
+      <p class="headerSub">
+        Highly Energy Retrofittable management for<br />
+        factory-Customized and Ultimately Load-Efficient Solutions
+      </p>
+    </div>
+    <!-- title -->
+    <div class="title">
+      <div class="wrapper">
+        <div class="revolvePage">업종별 최적화 기술</div>
+        <img
+          src="../common/icons/arrow/arrow_left_default.png"
+          alt="left"
+          class="arrow"
+          onclick="window.location.href = '/optimized' "
+        />
+        <div class="currentPage">
+          <p class="name">업종별 에너지 현황</p>
+          <p class="description">Energy Status by Industry</p>
+        </div>
+        <img
+          src="../common/icons/arrow/arrow_right_default.png"
+          alt="right"
+          class="arrow"
+          onclick="window.location.href = '/industrial' "
+        />
+        <div class="revolvePage">업종별 산업 동향</div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <!-- graph -->
+      <div class="graph">
+        <div class="textBox">
+          <div class="textRectangular"></div>
+          <p class="textTitle">업종별 에너지 상세 현황</p>
+        </div>
+        <div class="tableWrapper">
+          <div class="rowNameWrapper">
+            <div class="rowName">
+              <div class="rowCircle foodColor"></div>
+              식품 업종
+            </div>
+            <div class="rowName">
+              <div class="rowCircle paperColor"></div>
+              제지 업종
+            </div>
+            <div class="rowName">
+              <div class="rowCircle biomedColor"></div>
+              바이오의약
+            </div>
+            <div class="rowName">
+              <div class="rowCircle meltingColor"></div>
+              융해 업종
+            </div>
+          </div>
+          <table id="table">
+            <thead>
+              <tr>
+                <th>2018</th>
+                <th>2019</th>
+                <th>2020</th>
+                <th>2021</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- detail -->
+      <div class="detail">
+        <div
+          class="cardWrapper"
+          onclick="window.location.href='./detail/food.html' "
+        >
+          <img
+            src="../common/icons/food/food_default.png"
+            alt="food"
+            class="cardImg"
+          />
+          <p class="cardTitle">식품 업종</p>
+          <div class="cardDetailWrapper">
+            <p class="cardDetail">에너지 사용량 규모별 현황</p>
+            <p class="cardDetail">설비별 에너지 사용량</p>
+            <p class="cardDetail">지역별 에너지 사용량</p>
+          </div>
+        </div>
+        <div
+          class="cardWrapper"
+          onclick="window.location.href='./detail/paper.html' "
+        >
+          <img
+            src="../common/icons/paper/paper_default.png"
+            alt="paper"
+            class="cardImg"
+          />
+          <p class="cardTitle">제지 업종</p>
+          <div class="cardDetailWrapper">
+            <p class="cardDetail">에너지 사용량 규모별 현황</p>
+            <p class="cardDetail">설비별 에너지 사용량</p>
+            <p class="cardDetail">지역별 에너지 사용량</p>
+          </div>
+        </div>
+        <div
+          class="cardWrapper"
+          onclick="window.location.href='./detail/biomed.html' "
+        >
+          <img
+            src="../common/icons/biomed/biomed_default.png"
+            alt="biomed"
+            class="cardImg"
+          />
+          <p class="cardTitle">바이오의약<br />업종</p>
+          <div class="cardDetailWrapper">
+            <p class="cardDetail">에너지 사용량 규모별 현황</p>
+            <p class="cardDetail">설비별 에너지 사용량</p>
+            <p class="cardDetail">지역별 에너지 사용량</p>
+          </div>
+        </div>
+        <div
+          class="cardWrapper"
+          onclick="window.location.href='./detail/melting.html' "
+        >
+          <img
+            src="../common/icons/melting/melting_default.png"
+            alt="melting"
+            class="cardImg"
+          />
+          <p class="cardTitle">용해 업종</p>
+          <div class="cardDetailWrapper">
+            <p class="cardDetail">에너지 사용량 규모별 현황</p>
+            <p class="cardDetail">설비별 에너지 사용량</p>
+            <p class="cardDetail">지역별 에너지 사용량</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- map -->
+  </body>
+  <script src="./index.js"></script>
+</html>
