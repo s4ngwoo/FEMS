@@ -24,23 +24,23 @@ def melting_energy(request):
     # Render the melting energy page template
     return render(request, 'energy/detail/melting.html')
 
-def trends_overview(request):
-    # Render the trends overview page template
+def industrial_overview(request):
+    # Render the industrial overview page template
     return render(request, 'industrial/index.html')
 
-def sales_production(request):
+def sales_production_industrial(request):
     # Render the sales production page template
     return render(request, 'industrial/detail/sales_production.html')
 
-def profit(request):
+def profit_industrial(request):
     # Render the profit page template
     return render(request, 'industrial/detail/profit.html')
 
-def investment(request):
+def investment_industrial(request):
     # Render the investment page template
     return render(request, 'industrial/detail/investment.html')
 
-def management_investment(request):
+def management_investment_industrial(request):
     # Render the management investment page template
     return render(request, 'industrial/detail/management_investment.html')
 
