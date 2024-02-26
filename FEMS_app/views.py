@@ -2,65 +2,65 @@ from django.shortcuts import render
 
 def landing(request):
     # Render the main page template
-    return render(request, 'landing.html')
+    return render(request, 'index.html')
 
 def energy_overview(request):
     # Render the energy overview page template
-    return render(request, 'energy_overview.html')
+    return render(request, 'energy/index.html')
 
 def food_energy(request):
     # Render the food energy page template
-    return render(request, 'food_energy.html')
+    return render(request, 'energy/detail/food.html')
 
 def paper_energy(request):
     # Render the paper energy page template
-    return render(request, 'paper_energy.html')
+    return render(request, 'energy/detail/paper.html')
 
-def pharma_energy(request):
-    # Render the pharma energy page template
-    return render(request, 'pharma_energy.html')
+def biomed_energy(request):
+    # Render the biomed energy page template
+    return render(request, 'energy/detail/biomed.html')
 
-def solvent_energy(request):
-    # Render the solvent energy page template
-    return render(request, 'solvent_energy.html')
+def melting_energy(request):
+    # Render the melting energy page template
+    return render(request, 'energy/detail/melting.html')
 
 def trends_overview(request):
     # Render the trends overview page template
-    return render(request, 'trends_overview.html')
+    return render(request, 'industrial/index.html')
 
 def sales_production(request):
     # Render the sales production page template
-    return render(request, 'sales_production.html')
+    return render(request, 'industrial/detail/sales_production.html')
 
 def profit(request):
     # Render the profit page template
-    return render(request, 'profit.html')
+    return render(request, 'industrial/detail/profit.html')
 
 def investment(request):
     # Render the investment page template
-    return render(request, 'investment.html')
+    return render(request, 'industrial/detail/investment.html')
 
 def management_investment(request):
     # Render the management investment page template
-    return render(request, 'management_investment.html')
+    return render(request, 'industrial/detail/management_investment.html')
 
-def technology_overview(request):
-    # Render the technology overview page template
-    return render(request, 'technology_overview.html')
+def optimized_overview(request):
+    # Render the optimized overview page template
+    return render(request, 'optimized/index.html')
 
-def food_technology(request):
-    # Render the food technology page template
-    return render(request, 'food_technology.html')
+def food_optimized(request):
+    # Render the food optimized page template
+    return render(request, 'optimized/detail/food.html')
 
-def paper_technology(request):
-    # Render the paper technology page template
-    return render(request, 'paper_technology.html')
+def paper_optimized(request):
+    # Render the paper optimized page template
+    return render(request, 'optimized/detail/paper.html')
 
-def pharma_technology(request):
-    # Render the pharma technology page template
-    return render(request, 'pharma_technology.html')
+def biomed_optimized(request):
+    # Render the biomed optimized page template
+    return render(request, 'optimized/detail/biomed.html')
 
-def solvent_technology(request):
-    # Render the solvent technology page template
-    return render(request, 'solvent_technology.html')
+def melting_optimized(request):
+    # Render the melting optimized page template
+    return render(request, 'optimized/detail/melting.html')
 
