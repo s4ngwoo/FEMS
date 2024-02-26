@@ -1,0 +1,110 @@
+@import '../styles/color.css';
+@import '../styles/reset.css';
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  height: 198px;
+  font-family: pretendard;
+
+  position: relative;
+  z-index: 10;
+
+  cursor: pointer;
+}
+
+.headerBackground {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+
+  width: 609px;
+  height: 198px;
+  object-fit: cover;
+  opacity: 30%;
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.8px;
+
+  color: var(--main-color);
+}
+
+.headerSub {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.13px;
+}
+
+/* title */
+.title {
+  display: flex;
+  flex-direction: column;
+
+  height: 127px;
+  padding: 0 24px;
+}
+
+.title > .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 57px;
+  margin: 30px 0;
+
+  font-family: pretendard;
+}
+
+.currentPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 253px;
+}
+
+.currentPage > .name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.8px;
+}
+
+.currentPage > .description {
+  color: var(--gray-light);
+  margin-top: 8px;
+}
+
+.revolvePage {
+  width: 149px;
+  text-align: center;
+
+  color: var(--gray-hard);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+
+.arrow {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.title > .line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--main-color);
+}

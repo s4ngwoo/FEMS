@@ -1,0 +1,308 @@
+@import '../../styles/color.css';
+@import '../../styles/reset.css';
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  height: 112px;
+  font-family: pretendard;
+
+  cursor: pointer;
+}
+
+.topHeader {
+  width: 100%;
+  height: 62px;
+
+  position: relative;
+  z-index: 10;
+  background-color: var(--paper-color);
+}
+
+.headerBackground {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  width: 609px;
+  height: 62px;
+  object-fit: cover;
+  opacity: 30%;
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.8px;
+
+  color: var(--paper-color);
+}
+
+.headerSub {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.13px;
+}
+
+/* title */
+.title {
+  display: flex;
+  flex-direction: column;
+
+  height: 127px;
+  padding: 0 24px;
+}
+
+.title > .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 57px;
+  margin: 30px 0;
+
+  font-family: pretendard;
+}
+
+.pageTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currentPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  width: 260px;
+}
+
+.pageTextWrapper > .name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.8px;
+}
+
+.pageTextWrapper > .description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.87px;
+
+  color: var(--gray-light);
+  margin-top: 8px;
+}
+
+.revolvePage {
+  width: 149px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--gray-hard);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+
+.revolveIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.arrow {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.title > .line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--paper-color);
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 30px 24px;
+}
+
+.mainTitle {
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.87px;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.frame1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rectangle {
+  width: 4px;
+  height: 19px;
+  background-color: var(--paper-color);
+}
+
+.text {
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: var(--gray-hard);
+}
+
+/* chart */
+.chartWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.flowWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 14.33px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  font-family: pretendard;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.87px;
+  color: var(--paper-color);
+}
+
+.flowDetailWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+
+  padding-left: 20px;
+}
+
+.flowItemWrapper {
+  display: flex;
+  flex-direction: column;
+
+  border-left: 1px solid var(--paper-color);
+}
+
+.testWrapper {
+}
+
+.flowItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.frameHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 63px;
+}
+
+.frameText {
+  width: 200px;
+  text-align: center;
+
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: var(--gray-light);
+
+  margin: 20px 0 30px;
+}
+
+.frameContentWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 63px;
+}
+
+.frameContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  text-align: center;
+
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.87px;
+}
+.foodLine {
+  border-right: 1px solid var(--paper-color);
+}
+
+.frameDetail {
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+
+.frame2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 46px;
+}
+
+.frame3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 51px;
+}
