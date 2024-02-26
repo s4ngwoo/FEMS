@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="ko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEMS</title>
+    <link href="{% static '/index.css' %}" rel="stylesheet" />
+    <script src="{% static '/index.js' %}"></script>
+  </head>
+  <body>
+    <!-- frame1 -->
+    <div class="header">
+      <img
+	src="{% static '/common/background.png' %}"
+        alt="background"
+        class="headerBackground"
+      />
+      <div class="titleFrame1">
+        <p class="title1Main">HERCULES</p>
+        <p class="title1Sub">
+          Highly Energy Retrofittable management for<br />
+          factory-Customized and Ultimately Load-Efficient Solutions
+        </p>
+      </div>
+      <p class="title2">
+        “에너지 다소비 업종 에너지 절감과 공정 에너지 효율 향상을 위한 FEMS
+        솔루션” 기술 개발 및 확산
+      </p>
+      <p class="title3">
+        에너지 다소비 업종 대상 맞춤형 최적 공장에너지 관리시스템
+      </p>
+      <div class="headerIconWrapper">
+        <div class="headerIcon">
+          <img src="{% static '/common/icons/food/food_default.png' %}" alt="food" />
+          <p class="iconText">식품</p>
+        </div>
+        <div class="iconLine"></div>
+        <div class="headerIcon">
+          <img src="{% static '/common/icons/paper/paper_default.png' %}" alt="paper" />
+          <p class="iconText">제지</p>
+        </div>
+        <div class="iconLine"></div>
+        <div class="headerIcon">
+          <img src="{% static '/common/icons/biomed/biomed_default.png' %}" alt="biomed" />
+          <p class="iconText">바이오의약</p>
+        </div>
+        <div class="iconLine"></div>
+        <div class="headerIcon">
+          <img src="{% static '/common/icons/melting/melting_default.png' %}" alt="melting" />
+          <p class="iconText">용해</p>
+        </div>
+      </div>
+    </div>
+    <!-- frame2 -->
+    <div class="buttonWrapper">
+      <div
+        id="energy"
+        class="button"
+        onclick="window.location.href = '{% url 'energy_overview' %}' "
+        onmouseover="changeImage('energy', '{% static '/common/energy/energy_engaged.png' %}')"
+        onmouseout="changeImage('energy', '{% static '/common/energy/energy_default.png' %}')"
+      >
+        <p class="buttonTitle">업종별<br />에너지 현황</p>
+        <hr class="buttonHr" />
+        <p class="buttonSubTitle">Energy Status<br />by Industry</p>
+        <img src="{% static '/common/energy/energy_default.png' %}" alt="energy" />
+      </div>
+      <div
+        id="industrial"
+        class="button"
+        onclick="window.location.href = '{% url 'industrial_overview' %}' "
+        onmouseover="changeImage('industrial', '{% static '/common/industrial/industrial_engaged.png' %}')"
+        onmouseout="changeImage('industrial', '{% static '/common/industrial/industrial_default.png' %}')"
+      >
+        <p class="buttonTitle">업종별<br />산업 동향</p>
+        <hr class="buttonHr" />
+        <p class="buttonSubTitle">Industrial Insights<br />by Sector</p>
+        <img
+          src="{% static '/common/industrial/industrial_default.png' %}"
+          alt="Industrial"
+        />
+      </div>
+      <div
+        id="optimized"
+        class="button"
+        onclick="window.location.href = '{% url 'optimized_overview' %}' "
+        onmouseover="changeImage('optimized', '{% static '/common/optimized/optimized_engaged.png' %}')"
+        onmouseout="changeImage('optimized', '{% static '/common/optimized/optimized_default.png' %}')"
+      >
+        <p class="buttonTitle">업종별<br />최적화 기술</p>
+        <hr class="buttonHr" />
+        <p class="buttonSubTitle">Optimized Technology<br />by Sector</p>
+        <img src="{% static '/common/optimized/optimized_default.png' %}" alt="optimized" />
+      </div>
+      <div class="info">
+        <hr class="infoHr" />
+        <p class="infoTitle">
+          본 사업은 산업통상자원부 지원,<br />산업 기술혁신 사업으로
+          수행되었습니다
+        </p>
+        <hr class="infoHr" />
+        <p class="descriptionTitle">과제명</p>
+        <p class="description">
+          에너지 다소비 업종<br />
+          <span class="description">제지, 식품, 바이오의약, 금속 유리용해</span
+          ><br />
+          대상 맞춤형 공장 에너지 관리 시스템(FEMS)<br />기술 개발 및 실증
+        </p>
+        <p class="descriptionTitle">사업관리기관</p>
+        <p class="description">산업통상자원부 한국에너지기술평가원</p>
+        <p class="descriptionTitle">주관기관</p>
+        <p class="description">한국전자통신연구원(ETRI)</p>
+      </div>
+    </div>
+    <!-- frame3 -->
+    <div class="contactWrapper">
+      <div class="contact">
+        <p>연착처 담당기관</p>
+        <hr class="contactHr" />
+        <div class="detailWrapper">
+          <div class="contactDiv">이메일</div>
+          abcdefg@naver.com
+        </div>
+        <div class="detailWrapper">
+          <div class="contactDiv">전화</div>
+          02)0000-0000
+        </div>
+        <div class="detailWrapper">
+          <div class="contactDiv">팩스</div>
+          02)0000-0000
+        </div>
+      </div>
+      <div class="contact">
+        <p>연착처 담당기관</p>
+        <hr class="contactHr" />
+        <div class="detailWrapper">
+          <div class="contactDiv">이메일</div>
+          abcdefg@naver.com
+        </div>
+        <div class="detailWrapper">
+          <div class="contactDiv">전화</div>
+          02)0000-0000
+        </div>
+        <div class="detailWrapper">
+          <div class="contactDiv">팩스</div>
+          02)0000-0000
+        </div>
+      </div>
+    </div>
+    <!-- frame4 -->
+    <div class="logoWrapper">
+      <div class="logo">
+        <img src="{% static '/common/logo/logo.png' %}" />
+        <img src="{% static '/common/logo/logo2.png' %}" />
+        <img src="{% static '/common/logo/logo3.png' %}" />
+        <img src="{% static '/common/logo/logo4.png' %}" />
+        <img src="{% static '/common/logo/logo5.png' %}" />
+        <img src="{% static '/common/logo/logo6.png' %}" />
+      </div>
+      <div class="logo">
+        <img src="{% static '/common/logo/logo7.png' %}" />
+        <img src="{% static '/common/logo/logo8.png' %}" />
+        <img src="{% static '/common/logo/logo9.png' %}" />
+        <img src="{% static '/common/logo/logo10.png' %}" />
+        <img src="{% static '/common/logo/logo11.png' %}" />
+        <img src="{% static '/common/logo/logo12.png' %}" />
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footerWrapper">
+      <div class="footer">
+        <div>
+          <p class="footerTitle">주관기관</p>
+          <p class="footerInfo">한국전자통신연구원(ETRI)</p>
+        </div>
+        <div>
+          <p class="footerTitle">사이트 관리 기관</p>
+          <p class="footerInfo">(주)테라플랫폼</p>
+        </div>
+      </div>
+      <p class="footerSub">© 2024. (주)테라플랫폼, All rights reserved</p>
+    </div>
+  </body>
+</html>

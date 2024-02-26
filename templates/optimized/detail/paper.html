@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="{% static 'optimized/detail/paper.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="topHeader">
+      <img
+        src="{% static 'common/background.png' %}"
+        alt="background"
+        class="headerBackground"
+      />
+    </div>
+    <div class="header" onclick="window.location.href='{% url 'landing' %}' ">
+      <p class="headerTitle main">HERCULES</p>
+      <p class="headerSub">
+        Highly Energy Retrofittable management for<br />
+        factory-Customized and Ultimately Load-Efficient Solutions
+      </p>
+    </div>
+    <!-- title -->
+    <div class="title">
+      <div class="wrapper">
+        <div class="revolvePage">
+          <img
+            class="revolveIcon"
+            src="{% static 'common/icons/food/food_small_revolve.png' %}"
+            alt="biomed"
+          />식품 업종
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
+          alt="left"
+          class="arrow"
+	  onclick="window.location.href = '{% url 'food_optimized' %}' "
+        />
+        <div class="currentPage">
+          <img src="{% static 'common/icons/paper/paper_default.png' %}" alt="melting" />
+          <div class="pageTextWrapper">
+            <p class="name">제지 업종</p>
+            <p class="description">공정·에너지 최적화 기술</p>
+          </div>
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+          alt="right"
+          class="arrow"
+	  onclick="window.location.href = '{% url 'biomed_optimized' %}' "
+        />
+        <div class="revolvePage">
+          <img
+            src="{% static 'common/icons/biomed/biomed_small_revolve.png' %}"
+            alt="food"
+            class="revolveIcon"
+          />바이오의약<br />
+          업종
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <!-- main -->
+    <main>
+      <div class="mainTitle">
+        제약값 범위안에서 외란변수에 따라 변동성을 가지는 제어변수를 조절변수로
+        최적화하여 절감
+      </div>
+      <div class="frame">
+        <div class="frame1">
+          <div class="textBox">
+            <div class="rectangle"></div>
+            <div class="text">프로세스별 사용 기술</div>
+          </div>
+          <div class="chartWrapper">
+            <div class="flowWrapper">
+              <div class="flow">
+                <img src="{% static 'optimized/images/paper/paper_flow.png' %}" />조성
+              </div>
+              <div class="flow">
+                <img src="{% static 'optimized/images/paper/paper_flow.png' %}" />조치
+              </div>
+              <div class="flow">
+                <img src="{% static 'optimized/images/paper/paper_flow.png' %}" />가공
+              </div>
+              <div class="flow">
+                <img src="{% static 'optimized/images/paper/paper_flow.png' %}" />완정
+              </div>
+            </div>
+            <div class="flowDetailWrapper">
+              <div class="textWrapper">
+                <div class="flowItemWrapper">
+                  <div class="flowItem">
+                    <img
+                      src="{% static 'optimized/images/icons/icon_inspection.png' %}"
+                      alt="inspection"
+                    />
+                    설비진단
+                  </div>
+                </div>
+              </div>
+              <div class="flowItemWrapper">
+                <div class="flowItem">
+                  <img src="{% static 'optimized/images/icons/icon_predict.png' %}" alt="predict" />
+                  예측기술
+                </div>
+                <div class="flowItem">
+                  <img src="{% static 'optimized/images/icons/icon_control.png' %}" alt="control" />
+                  제어기술
+                </div>
+                <div class="flowItem">
+                  <img
+                    src="{% static 'optimized/images/icons/icon_inspection.png' %}"
+                    alt="inspection"
+                  />
+                  설비진단
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame1">
+          <div class="textBox">
+            <div class="rectangle"></div>
+            <div class="text">공정• 에너지 최적화 적용 기술</div>
+          </div>
+          <div class="frameHeader">
+            <div class="frameText">적용 기술</div>
+            <div class="frameText">기술 분류 (상세)</div>
+          </div>
+          <div class="frameContentWrapper">
+            <div class="frameContent foodLine">
+              제지공정<br />에너지 절감 기술
+            </div>
+            <div class="frameContent">
+              <div class="frameDetail">초지공정 Big Data 분석</div>
+              <div class="frameDetail">초지공정 지절 예측</div>
+              <div class="frameDetail">건조공정 에너지 최적화</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="textBox">
+        <div class="rectangle"></div>
+        <div class="text">기술 소개</div>
+      </div>
+      <div class="frame2">
+        <div class="frame3">
+          <img src="{% static 'optimized/images/paper/paper_graph1.png' %}" alt="graph1" />
+          <img src="{% static 'optimized/images/paper/icon_arrowD.png' %}" alt="arrow" />
+          <img src="{% static 'optimized/images/paper/paper_graph2.png' %}" alt="graph2" />
+        </div>
+        <img src="{% static 'optimized/images/paper/paper_graph3.png' %}" alt="graph3" />
+      </div>
+    </main>
+    <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
+  </body>
+</html>

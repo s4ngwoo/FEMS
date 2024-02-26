@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEMS/optimized</title>
+    <link href="{% static 'optimized/index.css' %}" rel="stylesheet" />
+    <script src="{% static 'optimized/index.js' %}"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header" onclick="window.location.href='/' ">
+      <img
+        src="{% static 'common/background.png' %}"
+        alt="background"
+        class="headerBackground"
+      />
+      <p class="headerTitle main">HERCULES</p>
+      <p class="headerSub">
+        Highly Energy Retrofittable management for<br />
+        factory-Customized and Ultimately Load-Efficient Solutions
+      </p>
+    </div>
+    <!-- title -->
+    <div class="title">
+      <div class="wrapper">
+        <div class="revolvePage">업종별 산업 동향</div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
+          alt="left"
+          class="arrow"
+	  onclick="window.location.href = '{% url 'industrial_overview' %}' "
+        />
+        <div class="currentPage">
+          <p class="name">업종별 최적화 기술</p>
+          <p class="description">Optimized Technology by Sector</p>
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+          alt="right"
+          class="arrow"	
+	  onclick="window.location.href = '{% url 'energy_overview' %}' "
+        />
+        <div class="revolvePage">업종별 에너지 현황</div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <!-- main -->
+    <main>
+      <!-- frame1 -->
+      <div class="frame1">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">업종 맞춤형 에너지 절감 기술</div>
+        </div>
+        <div class="frameTitleWrapper">
+          <p class="frameTitle">
+            식품, 제지, 바이오 ·의약, 용해 업종 공정 특화된 에너지 최적화 기술
+            적용
+          </p>
+          <p class="frameDescription">
+            업종별 공정의 주요 에너지 다소비 영향 인자 분석, AI 기반 에너지
+            모델링
+          </p>
+          <p class="frameDescription">
+            공정별 맞춤형 에너지 최적화 및 설비 건전성 기술
+          </p>
+        </div>
+        <div class="cardWrapper">
+          <div
+            class="card"
+            onclick="window.location.href='{% url 'food_optimized' %}' "
+          >
+            <img
+              src="{% static 'common/icons/food/food_default.png' %}"
+              alt="food"
+              class="cardImg"
+            />
+            <div class="cardTextWrapper">
+              <p class="cardTitle">식품 업종 (HMR, CMR)</p>
+              <p class="cardHighlight foodColor">
+                살균, 가열 공정 에너지 및 품질 최적화
+              </p>
+              <p class="cardDescription">살균공정에너지 최적화</p>
+              <p class="cardDescription">가열공정 비정상 누출 예지보전</p>
+            </div>
+            <img
+              src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+              alt="arrow"
+              class="cardArrow"
+            />
+          </div>
+          <div
+            class="card"
+            onclick="window.location.href='{% url 'paper_optimized' %}' "
+          >
+            <img
+              src="{% static 'common/icons/paper/paper_default.png' %}"
+              alt="food"
+              class="cardImg"
+            />
+            <div class="cardTextWrapper">
+              <p class="cardTitle">제지 업종</p>
+              <p class="cardHighlight paperColor">
+                살균, 가열 공정 에너지 및 품질 최적화
+              </p>
+              <p class="cardDescription">살균공정에너지 최적화</p>
+              <p class="cardDescription">가열공정 비정상 누출 예지보전</p>
+            </div>
+            <img
+              src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+              alt="arrow"
+              class="cardArrow"
+            />
+          </div>
+          <div
+            class="card"
+            onclick="window.location.href='{% url 'biomed_optimized' %}' "
+          >
+            <img
+              src="{% static 'common/icons/biomed/biomed_default.png' %}"
+              alt="food"
+              class="cardImg"
+            />
+            <div class="cardTextWrapper">
+              <p class="cardTitle">바이오 의약 업종</p>
+              <p class="cardHighlight biomedColor">
+                살균, 가열 공정 에너지 및 품질 최적화
+              </p>
+              <p class="cardDescription">살균공정에너지 최적화</p>
+              <p class="cardDescription">가열공정 비정상 누출 예지보전</p>
+            </div>
+            <img
+              src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+              alt="arrow"
+              class="cardArrow"
+            />
+          </div>
+          <div
+            class="card"
+            onclick="window.location.href='{% url 'melting_optimized' %}' "
+          >
+            <img
+              src="{% static 'common/icons/melting/melting_default.png' %}"
+              alt="food"
+              class="cardImg"
+            />
+            <div class="cardTextWrapper">
+              <p class="cardTitle">용해 업종 (금속)</p>
+              <p class="cardHighlight meltingColor">
+                살균, 가열 공정 에너지 및 품질 최적화
+              </p>
+              <p class="cardDescription">살균공정에너지 최적화</p>
+              <p class="cardDescription">가열공정 비정상 누출 예지보전</p>
+            </div>
+            <img
+              src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+              alt="arrow"
+              class="cardArrow"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- frame2 -->
+      <div class="textBox">
+        <div class="rectangle"></div>
+        <div class="text">에너지 절감 핵심 기술</div>
+      </div>
+      <div class="frame2">
+        <div class="frameContainer">
+          <div class="frameLine">
+            <p class="frameHeader">기술 분류</p>
+            <p class="frameHeader">기술 분류 (상세)</p>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle normalLine">공통 기술</p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">업종별 맞춤형 FEMS</p>
+              <p class="frameContent">데이터 수집 기술</p>
+              <p class="frameContent">공정진단기술</p>
+            </div>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle foodLine">
+              식품가공공장<br />에너지 절감 기술
+            </p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">에너지소비 구조분석/최적화</p>
+              <p class="frameContent">살균공정 에너지공급 최적화</p>
+              <p class="frameContent">가열공정 비정상 누출 예지보전</p>
+              <p class="frameContent">공정 배출에너지 회수 예측</p>
+            </div>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle paperLine">
+              제지공정<br />
+              에너지절감 기술
+            </p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">초지공정 Big Data 분석</p>
+              <p class="frameContent">초지공정 지절 예측</p>
+              <p class="frameContent">건조공정 에너지 최적화</p>
+            </div>
+          </div>
+        </div>
+        <div class="frameContainer">
+          <div class="frameLine">
+            <p class="frameHeader">기술 분류</p>
+            <p class="frameHeader">기술 분류 (상세)</p>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle biomedLine">
+              바이오 의약<br />
+              에너지절감 기술
+            </p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">공조설비 에너지 최적화</p>
+              <p class="frameContent">열원설비 에너지 최적화</p>
+              <p class="frameContent">배치공정 에너지 최적화</p>
+            </div>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle meltingLine">
+              용해공정<br />
+              에너지절감 기술
+            </p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">설비 건전성 기술</p>
+              <p class="frameContent">노온 예측 기술</p>
+              <p class="frameContent">잔탕 예측 기술</p>
+              <p class="frameContent">에너지 모델 기술</p>
+              <p class="frameContent">공정 스케줄링 기술</p>
+            </div>
+          </div>
+          <div class="frameLine">
+            <p class="frameContentTitle normalLine">M&V 및 보급확산</p>
+            <div class="frameContentWrapper">
+              <p class="frameContent">업종별 맞춤형 평가체계 (M&V)</p>
+              <p class="frameContent">절감기술 중소기업 적용방안</p>
+              <p class="frameContent">BM개발, 제도 및 정책 반영</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
+  </body>
+</html>

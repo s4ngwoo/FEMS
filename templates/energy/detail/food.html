@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="{% static 'energy/detail/food.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="topHeader">
+      <img
+        src="{% static 'common/background.png' %}"
+        alt="background"
+        class="headerBackground"
+      />
+    </div>
+    <div class="header" onclick="window.location.href = '{% url 'landing' %}' ">
+      <p class="headerTitle main">HERCULES</p>
+      <p class="headerSub">
+        Highly Energy Retrofittable management for<br />
+        factory-Customized and Ultimately Load-Efficient Solutions
+      </p>
+    </div>
+    <!-- title -->
+    <div class="title">
+      <div class="wrapper">
+        <div class="revolvePage">
+          <img
+            class="revolveIcon"
+            src="{% static 'common/icons/melting/melting_small_revolve.png' %}"
+            alt="melting"
+          />용해 업종
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
+          alt="left"
+          class="arrow"
+	  onclick="window.location.href = '{% url 'melting_energy' %}' "
+        />
+        <div class="currentPage">
+          <img src="{% static 'common/icons/food/food_default.png' %}" alt="food" />
+          <div class="pageTextWrapper">
+            <p class="name">식품 업종</p>
+            <p class="description">에너지 현황</p>
+          </div>
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+          alt="right"
+          class="arrow"
+	  onclick="window.location.href = '{% url 'paper_energy' %}' "
+        />
+        <div class="revolvePage">
+          <img
+            src="{% static 'common/icons/paper/paper_small_revolve.png' %}"
+            alt="paper"
+            class="revolveIcon"
+          />제지 업종
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
