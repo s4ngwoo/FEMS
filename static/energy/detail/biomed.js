@@ -1,22 +1,22 @@
 const map = {
-  식료품제조업: {
-    sum: 1125037,
-    seoul: 10980,
-    busan: 35153,
-    daegu: 19387,
-    incheon: 158459,
-    gwangju: 14986,
-    daejeon: 9904,
-    ulsan: 29302,
+  '의료용 물질 및 의약품 제조업': {
+    sum: 275566,
+    seoul: null,
+    busan: null,
+    daegu: null,
+    incheon: 61228,
+    gwangju: null,
+    daejeon: null,
+    ulsan: null,
     sejong: null,
-    gyeonggi: 275340,
-    gangwon: 29613,
-    chungbuk: 163719,
-    chungnam: 97906,
-    jeonbuk: 160310,
-    jeonnam: 24082,
-    gyeongbuk: 36348,
-    gyeongnam: 49882,
+    gyeonggi: 79222,
+    gangwon: null,
+    chungbuk: 76713,
+    chungnam: 28329,
+    jeonbuk: null,
+    jeonnam: null,
+    gyeongbuk: null,
+    gyeongnam: null,
     jeju: null,
   },
 };
@@ -26,11 +26,11 @@ $('#pageDropdown').change(function () {
   var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
 
   // 선택된 페이지 파일 로드
-  $('#pageContent').load('./map_html/' + selectedPage + '.html');
+  $('#pageContent').load('./biomed_map/' + selectedPage + '.html');
 });
 
 // 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
-$('#pageContent').load('./map_html/seoul.html');
+$('#pageContent').load('./biomed_map/seoul.html');
 
 // grapph
 // // JSON 데이터
@@ -265,54 +265,246 @@ const myChart = new Chart(ctx2, {
   },
 });
 
-// table2
-
-const table2Data = {
-  바이오: {
-    종업원수별: {
-      '0~10인': 248,
-      '11~50인': 272,
-      '51~150인': 124,
-      '150인 이상': 60,
-      총합계: 704,
-    },
-    규모별: {
-      소기업: 501,
-      중기업: 181,
-      중견기업: 4,
-      대기업: 18,
-      총합계: 704,
-    },
+const companyData = {
+  gangwon: {
+    대기업: 1,
+    소기업: 25,
+    중견기업: 0,
+    중기업: 9,
+    총합계: 35,
   },
-  // data ...
+  gyeonggi: {
+    대기업: 6,
+    소기업: 180,
+    중견기업: 2,
+    중기업: 61,
+    총합계: 249,
+  },
+  gyeongnam: {
+    대기업: 0,
+    소기업: 8,
+    중견기업: 0,
+    중기업: 0,
+    총합계: 8,
+  },
+  gyeongbuk: {
+    대기업: 0,
+    소기업: 31,
+    중견기업: 0,
+    중기업: 5,
+    총합계: 36,
+  },
+  gwangju: {
+    대기업: 0,
+    소기업: 2,
+    중견기업: 0,
+    중기업: 0,
+    총합계: 2,
+  },
+  daegu: {
+    대기업: 0,
+    소기업: 17,
+    중견기업: 0,
+    중기업: 1,
+    총합계: 18,
+  },
+  daejeon: {
+    대기업: 1,
+    소기업: 24,
+    중견기업: 0,
+    중기업: 11,
+    총합계: 36,
+  },
+  busan: {
+    대기업: 0,
+    소기업: 12,
+    중견기업: 0,
+    중기업: 6,
+    총합계: 18,
+  },
+  seoul: {
+    대기업: 0,
+    소기업: 37,
+    중견기업: 1,
+    중기업: 8,
+    총합계: 46,
+  },
+  sejong: {
+    대기업: 0,
+    소기업: 5,
+    중견기업: 1,
+    중기업: 7,
+    총합계: 13,
+  },
+  ulsan: {
+    대기업: 0,
+    소기업: 2,
+    중견기업: 0,
+    중기업: 1,
+    총합계: 3,
+  },
+  incheon: {
+    대기업: 2,
+    소기업: 12,
+    중견기업: 0,
+    중기업: 6,
+    총합계: 20,
+  },
+  jeonnam: {
+    대기업: 1,
+    소기업: 20,
+    중견기업: 0,
+    중기업: 3,
+    총합계: 24,
+  },
+  jeonbuk: {
+    대기업: 1,
+    소기업: 20,
+    중견기업: 0,
+    중기업: 6,
+    총합계: 27,
+  },
+  jeju: {
+    대기업: 0,
+    소기업: 1,
+    중견기업: 0,
+    중기업: 1,
+    총합계: 2,
+  },
+  chungnam: {
+    대기업: 1,
+    소기업: 38,
+    중견기업: 0,
+    중기업: 13,
+    총합계: 52,
+  },
+  chungbuk: {
+    대기업: 5,
+    소기업: 67,
+    중견기업: 0,
+    중기업: 43,
+    총합계: 115,
+  },
 };
 
-var tableBody2 = document.querySelector('#table2 tbody');
-var constants2 = table2Data.바이오.종업원수별;
-
-for (table2Item in constants2) {
-  if (table2Item !== '총합계') {
-    var row = document.createElement('tr');
-    row.innerHTML =
-      '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
-    tableBody2.appendChild(row);
-  }
-}
-
-var total = constants2.총합계;
-$('#totalValue').text(total);
-
-var tableBody3 = document.querySelector('#tbody3');
-var constants3 = table2Data.바이오.규모별;
-
-for (table3Item in constants3) {
-  if (table3Item !== '총합계') {
-    var row = document.createElement('tr');
-    row.innerHTML =
-      '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
-    tableBody3.appendChild(row);
-  }
-}
-
-var total = constants3.총합계;
-$('#totalValue2').text(total);
+const personData = {
+  seoul: {
+    '0~10인': 20,
+    '11~50인': 21,
+    '51~150인': 4,
+    '150인 이상': 1,
+    총합계: 46,
+  },
+  busan: {
+    '0~10인': 5,
+    '11~50인': 7,
+    '51~150인': 4,
+    '150인 이상': 2,
+    총합계: 18,
+  },
+  daegu: {
+    '0~10인': 9,
+    '11~50인': 8,
+    '51~150인': 1,
+    '150인 이상': 0,
+    총합계: 18,
+  },
+  incheon: {
+    '0~10인': 7,
+    '11~50인': 5,
+    '51~150인': 4,
+    '150인 이상': 4,
+    총합계: 20,
+  },
+  gwangju: {
+    '0~10인': 1,
+    '11~50인': 1,
+    '51~150인': 0,
+    '150인 이상': 0,
+    총합계: 2,
+  },
+  daejeon: {
+    '0~10인': 14,
+    '11~50인': 8,
+    '51~150인': 11,
+    '150인 이상': 3,
+    총합계: 36,
+  },
+  ulsan: {
+    '0~10인': 1,
+    '11~50인': 1,
+    '51~150인': 1,
+    '150인 이상': 0,
+    총합계: 3,
+  },
+  sejong: {
+    '0~10인': 3,
+    '11~50인': 4,
+    '51~150인': 2,
+    '150인 이상': 4,
+    총합계: 13,
+  },
+  gyeonggi: {
+    '0~10인': 77,
+    '11~50인': 108,
+    '51~150인': 43,
+    '150인 이상': 21,
+    총합계: 249,
+  },
+  chungbuk: {
+    '0~10인': 23,
+    '11~50인': 50,
+    '51~150인': 28,
+    '150인 이상': 14,
+    총합계: 115,
+  },
+  chungnam: {
+    '0~10인': 22,
+    '11~50인': 16,
+    '51~150인': 8,
+    '150인 이상': 6,
+    총합계: 52,
+  },
+  jeonbuk: {
+    '0~10인': 14,
+    '11~50인': 8,
+    '51~150인': 4,
+    '150인 이상': 1,
+    총합계: 27,
+  },
+  jeonnam: {
+    '0~10인': 12,
+    '11~50인': 10,
+    '51~150인': 2,
+    '150인 이상': 0,
+    총합계: 24,
+  },
+  gyeongbuk: {
+    '0~10인': 22,
+    '11~50인': 8,
+    '51~150인': 6,
+    '150인 이상': 0,
+    총합계: 36,
+  },
+  gyeongnam: {
+    '0~10인': 6,
+    '11~50인': 2,
+    '51~150인': 0,
+    '150인 이상': 0,
+    총합계: 8,
+  },
+  jeju: {
+    '0~10인': 0,
+    '11~50인': 2,
+    '51~150인': 0,
+    '150인 이상': 0,
+    총합계: 2,
+  },
+  gangwon: {
+    '0~10인': 12,
+    '11~50인': 13,
+    '51~150인': 6,
+    '150인 이상': 4,
+    총합계: 35,
+  },
+};

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="pageItemWrapper">
+      <div class="pagecontent">
+        <img src="./map/map_jeonnam.png" alt="jeonnam" class="map" />
+        <p class="pageItem" id="item"></p>
+      </div>
+      <div class="chart">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">
+            업종 시도별 해당 업종 기업수<br />
+            (2023년)<br />
+            *해당업종 전체기업수
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="cardHeader">
+              <p class="cardTitle">전남</p>
+              <p class="cardSub">
+                지역별-규모별<br />
+                대상 기업수
+              </p>
+            </div>
+            <div class="cardBoldLine"></div>
+          </div>
+          <table id="table2">
+            <thead id="tableChart1">
+              <tr>
+                <th>종업원수</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p class="cardDescription">
+            총 <span id="totalValue" class="bold"></span> 명의 종업원이
+            있습니다.
+          </p>
+          <table id="table3">
+            <thead id="tableChart1">
+              <tr>
+                <th>규모별 기업수</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody3"></tbody>
+          </table>
+          <p class="cardDescription">
+            총 <span id="totalValue2" class="bold"></span> 개 기업이 있습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const jeonnamPerson = personData.jeonnam;
+    const jeonnamCompany = companyData.jeonnam;
+
+    var tableBody2 = document.querySelector('#table2 tbody');
+    var constants2 = jeonnamPerson;
+
+    for (table2Item in constants2) {
+      if (table2Item !== '총합계') {
+        var row = document.createElement('tr');
+        row.innerHTML =
+          '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
+        tableBody2.appendChild(row);
+      }
+    }
+
+    var total = constants2.총합계;
+    $('#totalValue').text(total);
+
+    var tableBody3 = document.querySelector('#tbody3');
+    var constants3 = jeonnamCompany;
+
+    for (table3Item in constants3) {
+      if (table3Item !== '총합계') {
+        var row = document.createElement('tr');
+        row.innerHTML =
+          '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
+        tableBody3.appendChild(row);
+      }
+    }
+
+    var total2 = constants3.총합계;
+    $('#totalValue2').text(total2);
+  </script>
+</html>

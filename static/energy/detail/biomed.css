@@ -197,10 +197,25 @@ td {
   padding: 8px;
 }
 
+.tableDescription {
+  color: var(--gray-light);
+  margin: 50px auto;
+}
+
 /* pagecontent */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .pagecontent {
   display: flex;
   flex-direction: column;
+}
+
+.pageItemWrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .pageItem {
@@ -214,6 +229,8 @@ td {
 .chart {
   display: flex;
   flex-direction: column;
+
+  margin-top: 63px;
 }
 
 .card {
@@ -276,4 +293,14 @@ td {
 
 #tableChart1 {
   border-bottom: 1px solid var(--biomed-color);
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 51px;
 }
