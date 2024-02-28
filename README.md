@@ -114,8 +114,8 @@ Run container based on the Docker Image above.
 - 지역별-규모별 기업 수 차트<br><pre>
 2-(2)(3)(4)(5)-4) / company_size / <food, paper, melting, biomed>.json</pre>
 
-- 설비별-에너지원별 에너지 소비 구성 차트<br><pre></pre>
-2-(2)(3)(4)(5)-4) / data.json</pre>
+- 설비별-에너지원별 에너지 소비 구성 차트
+<br><pre> 2-(2)(3)(4)(5)-4) / data.json</pre>
 
 #### 제지 업종 에너지 현황 페이지
 <pre>식품 업종 에너지 현황 페이지와 동일</pre>
