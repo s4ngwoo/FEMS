@@ -155,6 +155,31 @@ main {
   width: 325px;
 }
 
+/* textBox */
+.textBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.rectangle {
+  width: 4px;
+  /* height: 19px; */
+  height: 100%;
+  background-color: var(--food-color);
+}
+
+.text {
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: var(--gray-light);
+}
+
 /* table */
 table {
   width: 100%;

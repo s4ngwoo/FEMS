@@ -92,6 +92,10 @@
 
     <main>
       <div class="graph">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">구간별 에너지 소비</div>
+        </div>
         <canvas id="foodChart" style="width: 611px; height: 402.34px"></canvas>
         <table id="table">
           <thead>
@@ -104,12 +108,36 @@
           </thead>
           <tbody></tbody>
         </table>
+        <div class="tableDescription">
+          출처: 2021년도 에너지사용량 통계, 2022.8 한국에너지공단
+        </div>
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">설비별-에너지원별<br />에너지 소비 구성</div>
+        </div>
         <canvas id="foodChart2" style="width: 545px; height: 402.34px"></canvas>
       </div>
-      <div id="pageContent">
-        <!-- 선택된 페이지에 따라 내용이 이곳에 표시 -->
+      <div class="pageWrapper">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">
+            식품 업종 시도별 에너지 다소비 사업장<br />
+            (2,000toe이상) 에너지소비량 (2021)
+          </div>
+        </div>
+        <div id="pageContent">
+          <!-- 선택된 페이지에 따라 내용이 이곳에 표시 -->
+        </div>
       </div>
       <div class="chart">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">
+            업종 시도별 해당 업종 기업수<br />
+            (2023년)<br />
+            *해당업종 전체기업수
+          </div>
+        </div>
         <div class="card">
           <div>
             <div class="cardHeader">
