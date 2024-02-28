@@ -178,6 +178,14 @@ td {
   flex-direction: column;
 }
 
+.pageItem {
+  margin: 20px auto;
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--gray-light);
+}
+
 .chart {
   display: flex;
   flex-direction: column;

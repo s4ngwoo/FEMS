@@ -50,19 +50,30 @@
     <!-- 새로 추가 한 부분 -->
     <main>
       <div class="graph">
-        <canvas id="chart1"></canvas>
+        <div class="chart-container">
+          <canvas id="chart1" style="width: 545px; height: 368px"></canvas>
+        </div>
+        <p class="graphDescription">
+          출처 : 업종별 분기별 생산지수 추이[2020년 전체제조업 생산지수
+          100기준]<br />
+          출처통계청,「광업제조업동향조사」, 2023.11, 2024.01.28, 시도/산업별
+          광공업생산지수(2020=100)
+        </p>
       </div>
       <div class="buttonWrapper">
         <div
           class="button"
-	  onclick="window.location.href='{% url 'revenue' %}' "
+          onclick="window.location.href='{% url 'revenue' %}' "
         >
           <div class="buttonTextWrapper">
             <div class="buttonTitle">업종별 매출 · 생산액</div>
             <div class="buttonLine"></div>
             <div class="buttonSub">각 시장별 및 수급별 지표</div>
           </div>
-	  <img src="{% static 'common/icons/arrow/arrow_right_default.png' %}" alt="" />
+          <img
+            src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+            alt=""
+          />
         </div>
         <div
           class="button"
@@ -73,7 +84,10 @@
             <div class="buttonLine"></div>
             <div class="buttonSub">각 시장별 및 수급별 지표</div>
           </div>
-          <img src="{% static 'common/icons/arrow/arrow_right_default.png' %}" alt="" />
+          <img
+            src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+            alt=""
+          />
         </div>
         <div
           class="button"
@@ -84,7 +98,10 @@
             <div class="buttonLine"></div>
             <div class="buttonSub">각 시장별 및 수급별 지표</div>
           </div>
-          <img src="{% static 'common/icons/arrow/arrow_right_default.png' %}" alt="" />
+          <img
+            src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+            alt=""
+          />
         </div>
         <div
           class="button"
@@ -95,7 +112,10 @@
             <div class="buttonLine"></div>
             <div class="buttonSub">각 시장별 및 수급별 지표</div>
           </div>
-          <img src="{% static 'common/icons/arrow/arrow_right_default.png' %}" alt="" />
+          <img
+            src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+            alt=""
+          />
         </div>
       </div>
     </main>

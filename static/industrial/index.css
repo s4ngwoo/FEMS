@@ -116,6 +116,22 @@ main {
   padding: 30px 24px;
 }
 
+/* graph */
+.graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.graphDescription {
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.13px;
+  color: var(--gray-light);
+  text-align: center;
+  margin-top: 30px;
+}
+
 /* button */
 .buttonWrapper {
   display: flex;

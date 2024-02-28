@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="pagecontent">
+      <img src="./map/map_sejong.png" alt="sejong" class="map" />
+      <p class="pageItem" id="item"></p>
+    </div>
+  </body>
+  <script>
+    const sejongValue = map.식료품제조업.sejong;
+
+    $(document).ready(function () {
+      // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
+      $('#item').append('세종 에너지 소비량: ' + sejongValue);
+    });
+  </script>
+</html>

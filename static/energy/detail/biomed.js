@@ -1,3 +1,26 @@
+const map = {
+  식료품제조업: {
+    sum: 1125037,
+    seoul: 10980,
+    busan: 35153,
+    daegu: 19387,
+    incheon: 158459,
+    gwangju: 14986,
+    daejeon: 9904,
+    ulsan: 29302,
+    sejong: null,
+    gyeonggi: 275340,
+    gangwon: 29613,
+    chungbuk: 163719,
+    chungnam: 97906,
+    jeonbuk: 160310,
+    jeonnam: 24082,
+    gyeongbuk: 36348,
+    gyeongnam: 49882,
+    jeju: null,
+  },
+};
+
 // Dropdown 변경 이벤트 처리
 $('#pageDropdown').change(function () {
   var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
