@@ -30,19 +30,19 @@ def industrial_overview(request):
 
 def sales_production_industrial(request):
     # Render the sales production page template
-    return render(request, 'industrial/detail/sales_production.html')
+    return render(request, 'industrial/detail/revenue.html')
 
 def profit_industrial(request):
     # Render the profit page template
-    return render(request, 'industrial/detail/profit.html')
+    return render(request, 'industrial/detail/profitability.html')
 
 def investment_industrial(request):
     # Render the investment page template
-    return render(request, 'industrial/detail/investment.html')
+    return render(request, 'industrial/detail/expenditure.html')
 
 def management_investment_industrial(request):
     # Render the management investment page template
-    return render(request, 'industrial/detail/management_investment.html')
+    return render(request, 'industrial/detail/trends.html')
 
 def optimized_overview(request):
     # Render the optimized overview page template
