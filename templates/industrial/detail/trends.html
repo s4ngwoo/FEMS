@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./trends.css" rel="stylesheet" />
+    <link href="{% static 'industrial/detail/trends.css' %}" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
@@ -15,7 +16,7 @@
         <div class="topHeaderLine"></div>
         <p class="topHeaderText">연락기관</p>
       </div>
-      <div class="header" onclick="window.location.href='/' ">
+      <div class="header" onclick="window.location.href='{% url 'landing' %}' ">
         <p class="headerTitle">HERCULES</p>
         <p class="headerSub">
           Highly Energy Retrofittable management for<br />

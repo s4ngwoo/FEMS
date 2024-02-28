@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FEMS/industrial</title>
-    <link href="./profitability.css" rel="stylesheet" />
+    <link href="{% static 'industrial/detail/profitability.css' %}" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
     <div class="topHeader">
       <img
-        src="../../common/background.png"
+        src="{% static 'common/background.png' %}"
         alt="background"
         class="headerBackground"
       />
@@ -30,10 +31,10 @@
           매출 영업이익률 · 당기순이익
         </div>
         <img
-          src="../../common/icons/arrow/arrow_left_default.png"
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-          onclick="window.location.href = './investment.html' "
+          onclick="window.location.href='{% url 'profitability' %}' "
         />
         <div class="currentPage">
           <p class="name">
@@ -42,10 +43,10 @@
           </p>
         </div>
         <img
-          src="../../common/icons/arrow/arrow_right_default.png"
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
           alt="right"
           class="arrow"
-          onclick="window.location.href = './expenditure.html' "
+          onclick="window.location.href='{% url 'trends' %}' "
         />
         <div class="revolvePage">
           업종별<br />
@@ -72,5 +73,5 @@
     <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./profitability.js"></script>
+  <script src="{% static 'profitability.js"></script>
 </html>

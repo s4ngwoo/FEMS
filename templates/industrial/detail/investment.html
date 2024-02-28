@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FEMS/industrial</title>
-    <link href="./investment.css" rel="stylesheet" />
+    <link href="{% static 'industrial/detail/investment.css' %}" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
     <div class="topHeader">
       <img
-        src="../../common/background.png"
+        src="{% static 'common/background.png' %}"
         alt="background"
         class="headerBackground"
       />
@@ -30,10 +31,10 @@
           매출 · 생산액
         </div>
         <img
-          src="../../common/icons/arrow/arrow_left_default.png"
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-          onclick="window.location.href = './revenue.html' "
+          onclick="window.location.href='{% url 'revenue' %}' "
         />
         <div class="currentPage">
           <p class="name">
@@ -42,10 +43,10 @@
           </p>
         </div>
         <img
-          src="../../common/icons/arrow/arrow_right_default.png"
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
           alt="right"
           class="arrow"
-          onclick="window.location.href = './profitability.html' "
+          onclick="window.location.href='{% url 'profitability' %}' "
         />
         <div class="revolvePage">
           업종별<br />
@@ -70,5 +71,5 @@
     <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="./investment.js"></script>
+  <script src="{% static 'investment.js"></script>
 </html>
