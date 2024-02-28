@@ -109,7 +109,10 @@ Run container based on the Docker Image above.
 2-(2)(3)(4)-1) / data.json</pre>
 
 - 지역별-규모별 기업 수 차트<br><pre>
-2-(2)(3)(4)(5)-4) / data.json</pre>
+2-(2)(3)(4)(5)-4) / person_count / <food, paper, melting, biomed>.json</pre>
+
+- 지역별-규모별 기업 수 차트<br><pre>
+2-(2)(3)(4)(5)-4) / company_size / <food, paper, melting, biomed>.json</pre>
 
 - 설비별-에너지원별 에너지 소비 구성 차트<br><pre></pre>
 2-(2)(3)(4)(5)-4) / data.json</pre>
