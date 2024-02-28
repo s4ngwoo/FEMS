@@ -259,3 +259,34 @@ th {
   font-size: 11px;
   border-inline-end-width: 13.13px;
 }
+
+/* map */
+.map {
+  padding: 30px 24px;
+  margin: 0 auto;
+}
+
+.mapBase {
+  position: absolute;
+}
+
+.mapPing {
+  position: absolute;
+  top: 40.5px;
+}
+
+.left {
+  left: -46px;
+}
+.right {
+  right: -28px;
+}
+
+.seoul {
+  width: 137.9px;
+  height: 51px;
+
+  position: absolute;
+  top: 15px;
+  left: -38.1px;
+}

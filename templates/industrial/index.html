@@ -30,7 +30,7 @@
           src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-	  onclick="window.location.href = '{% url 'energy_overview' %}' "
+          onclick="window.location.href = '{% url 'energy_overview' %}' "
         />
         <div class="currentPage">
           <p class="name">업종별 산업 동향</p>
@@ -40,11 +40,66 @@
           src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
           alt="right"
           class="arrow"
-	  onclick="window.location.href = '{% url 'optimized_overview' %}' "
+          onclick="window.location.href = '{% url 'optimized_overview' %}' "
         />
         <div class="revolvePage">업종별 최적화 기술</div>
       </div>
       <div class="line"></div>
     </div>
+
+    <!-- 새로 추가 한 부분 -->
+    <main>
+      <div class="graph">
+        <canvas id="chart1"></canvas>
+      </div>
+      <div class="buttonWrapper">
+        <div
+          class="button"
+          onclick="window.location.href='./detail/revenue.html' "
+        >
+          <div class="buttonTextWrapper">
+            <div class="buttonTitle">업종별 매출 · 생산액</div>
+            <div class="buttonLine"></div>
+            <div class="buttonSub">각 시장별 및 수급별 지표</div>
+          </div>
+          <img src="../../common/icons/arrow/arrow_right_default.png" alt="" />
+        </div>
+        <div
+          class="button"
+          onclick="window.location.href='./detail/investment.html' "
+        >
+          <div class="buttonTextWrapper">
+            <div class="buttonTitle">업종별 매출 영업이익률 · 당기순이익</div>
+            <div class="buttonLine"></div>
+            <div class="buttonSub">각 시장별 및 수급별 지표</div>
+          </div>
+          <img src="../../common/icons/arrow/arrow_right_default.png" alt="" />
+        </div>
+        <div
+          class="button"
+          onclick="window.location.href='./detail/profitability.html' "
+        >
+          <div class="buttonTextWrapper">
+            <div class="buttonTitle">업종별 설비투자액 · 설비투자효율</div>
+            <div class="buttonLine"></div>
+            <div class="buttonSub">각 시장별 및 수급별 지표</div>
+          </div>
+          <img src="../../common/icons/arrow/arrow_right_default.png" alt="" />
+        </div>
+        <div
+          class="button"
+          onclick="window.location.href='./detail/expenditure.html' "
+        >
+          <div class="buttonTextWrapper">
+            <div class="buttonTitle">업종별 경영 투자 현황</div>
+            <div class="buttonLine"></div>
+            <div class="buttonSub">각 시장별 및 수급별 지표</div>
+          </div>
+          <img src="../../common/icons/arrow/arrow_right_default.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <img src="./map.png" alt="map" class="map" />
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>

@@ -29,7 +29,7 @@
           src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-	  onclick="window.location.href='{% url 'optimized_overview' %}' "
+          onclick="window.location.href='{% url 'optimized_overview' %}' "
         />
         <div class="currentPage">
           <p class="name">업종별 에너지 현황</p>
@@ -53,6 +53,11 @@
           <div class="textRectangular"></div>
           <p class="textTitle">업종별 에너지 상세 현황</p>
         </div>
+
+        <div class="chart-container">
+          <canvas id="chart1" style="width: 545px; height: 368px"></canvas>
+        </div>
+
         <div class="tableWrapper">
           <div class="rowNameWrapper">
             <div class="rowName">
@@ -89,7 +94,7 @@
       <div class="detail">
         <div
           class="cardWrapper"
-	  onclick="window.location.href='{% url 'food_energy' %}' "
+          onclick="window.location.href='{% url 'food_energy' %}' "
         >
           <img
             src="{% static 'common/icons/food/food_default.png' %}"
@@ -155,6 +160,10 @@
     </div>
 
     <!-- map -->
+    <div class="map">
+      <img src="./images/map.png" alt="map" />
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="{% static 'energy/index.js' %}"></script>
 </html>

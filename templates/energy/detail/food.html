@@ -37,10 +37,13 @@
           src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-	  onclick="window.location.href = '{% url 'melting_energy' %}' "
+          onclick="window.location.href = '{% url 'melting_energy' %}' "
         />
         <div class="currentPage">
-          <img src="{% static 'common/icons/food/food_default.png' %}" alt="food" />
+          <img
+            src="{% static 'common/icons/food/food_default.png' %}"
+            alt="food"
+          />
           <div class="pageTextWrapper">
             <p class="name">식품 업종</p>
             <p class="description">에너지 현황</p>
@@ -50,7 +53,7 @@
           src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
           alt="right"
           class="arrow"
-	  onclick="window.location.href = '{% url 'paper_energy' %}' "
+          onclick="window.location.href = '{% url 'paper_energy' %}' "
         />
         <div class="revolvePage">
           <img
@@ -62,5 +65,90 @@
       </div>
       <div class="line"></div>
     </div>
+
+    <!-- 추가 -->
+
+    <!-- main -->
+    <select id="pageDropdown" class="dropDown">
+      <option value="seoul">서울</option>
+      <option value="incheon">인천</option>
+      <option value="gyeonggi">경기</option>
+      <option value="gangwon">강원</option>
+      <option value="gyeongbuk">경북</option>
+      <option value="gyeongnam">경남</option>
+      <option value="pusan">부산</option>
+      <option value="jeonnam">전주</option>
+      <option value="jeonbuk">전북</option>
+      <option value="jeju">제주</option>
+      <option value="chungnam">충남</option>
+      <option value="chungbuk">충북</option>
+      <option value="sejong">세종</option>
+      <option value="daejeon">대전</option>
+      <option value="daegu">대구</option>
+      <option value="ulsan">울산</option>
+      <option value="gwangju">광주</option>
+    </select>
+
+    <main>
+      <div class="graph">
+        <canvas id="foodChart" style="width: 611px; height: 402.34px"></canvas>
+        <table id="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>연료 소비량</th>
+              <th>전력량</th>
+              <th>기업 수</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <canvas id="foodChart2" style="width: 545px; height: 402.34px"></canvas>
+      </div>
+      <div id="pageContent">
+        <!-- 선택된 페이지에 따라 내용이 이곳에 표시 -->
+      </div>
+      <div class="chart">
+        <div class="card">
+          <div>
+            <div class="cardHeader">
+              <p class="cardTitle">서울</p>
+              <p class="cardSub">
+                지역별-규모별<br />
+                대상 기업수
+              </p>
+            </div>
+            <div class="cardBoldLine"></div>
+          </div>
+          <table id="table2">
+            <thead id="tableChart1">
+              <tr>
+                <th>종업원수</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p class="cardDescription">
+            총 <span id="totalValue" class="bold"></span> 명의 종업원이
+            있습니다.
+          </p>
+          <table id="table3">
+            <thead id="tableChart1">
+              <tr>
+                <th>규모별 기업수</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody3"></tbody>
+          </table>
+          <p class="cardDescription">
+            총 <span id="totalValue2" class="bold"></span> 명의 종업원이
+            있습니다.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./food.js"></script>
 </html>
