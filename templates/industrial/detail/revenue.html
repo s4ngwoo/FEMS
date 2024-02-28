@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FEMS/industrial</title>
-    <link href="{% static 'industrial/detail/revenue.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'industrial/detail/revenue.css' %}"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
@@ -58,11 +61,19 @@
     <!-- main -->
     <main>
       <div class="graph">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">업종별 매출액</div>
+        </div>
         <div class="chart-container">
           <canvas id="chart1"></canvas>
         </div>
       </div>
       <div class="graph">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">업종별 생산액</div>
+        </div>
         <div class="chart-container">
           <canvas id="chart2"></canvas>
         </div>

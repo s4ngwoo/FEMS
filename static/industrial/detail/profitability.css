@@ -128,7 +128,31 @@ main {
   display: grid;
   width: 50%;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 29px 1fr 1fr;
+}
+
+/* textBox */
+.textBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.rectangle {
+  width: 4px;
+  height: 19px;
+  background-color: var(--industry-color);
+}
+
+.text {
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  color: var(--gray-light);
 }
 
 /* footer */

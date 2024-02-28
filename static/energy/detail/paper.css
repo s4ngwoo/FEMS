@@ -169,7 +169,7 @@ main {
   width: 4px;
   /* height: 19px; */
   height: 100%;
-  background-color: var(--food-color);
+  background-color: var(--paper-color);
 }
 
 .text {
