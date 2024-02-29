@@ -1,4 +1,3 @@
-{% load static %}
 const map = {
   식료품제조업: {
     sum: 1125037,
@@ -22,16 +21,40 @@ const map = {
   },
 };
 
-// Dropdown 변경 이벤트 처리
-$('#pageDropdown').change(function () {
-  var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
+// Query 로드
+var script = document.createElement('script');
+script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
 
-  // 선택된 페이지 파일 로드
-  $('#pageContent').load('/food_map/' + selectedPage + '.html');
-});
+// jQuery가 로드된 후 실행될 함수
+script.onload = function () {
+  // jQuery를 사용하여 DOM이 로드되었을 때 실행할 작업들을 여기에 작성합니다.
+  // 예: $(document).ready(function() {...});
 
-// 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
-$('#pageContent').load('{% static 'food_map/seoul.html' %}');
+  // Dropdown 변경 이벤트 처리
+  $('#pageDropdown').change(function () {
+    var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
+    console.log(selectedPage);
+
+    // 선택된 페이지 파일 로드
+    $('#pageContent').load('/food_map/' + selectedPage + '.html');
+  });
+
+  // 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
+  $('#pageContent').load('food_map/seoul.html');
+};
+
+//// Dropdown 변경 이벤트 처리
+//$('#pageDropdown').change(function () {
+  //var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
+//
+  //// 선택된 페이지파일 로드
+  //$('#pageContent').load('./food_map/' + selectedPage + '.html');
+//});
+//
+//// 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
+//$('#pageContent').load('./food_map/seoul.html'); 
 
 // grapph
 // // JSON 데이터
