@@ -51,7 +51,7 @@
       <div class="graph">
         <div class="textBox">
           <div class="textRectangular"></div>
-          <p class="textTitle">업종별 에너지 상세 현황</p>
+          <p class="textTitle">연도별 에너지 소비량</p>
         </div>
 
         <div class="chart-container">
@@ -74,7 +74,7 @@
             </div>
             <div class="rowName">
               <div class="rowCircle meltingColor"></div>
-              용해 업종
+              융해 업종
             </div>
           </div>
           <table id="table">
@@ -92,12 +92,16 @@
       </div>
       <!-- detail -->
       <div class="detail">
+        <div class="textBox">
+          <div class="textRectangular"></div>
+          <p class="textTitle">업종별 에너지 상세 현황</p>
+        </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='{% url 'food_energy' %}' "
+          onclick="window.location.href='./detail/food.html' "
         >
           <img
-            src="{% static 'common/icons/food/food_default.png' %}"
+            src="../common/icons/food/food_default.png"
             alt="food"
             class="cardImg"
           />
@@ -110,10 +114,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='{% url 'paper_energy' %}' "
+          onclick="window.location.href='./detail/paper.html' "
         >
           <img
-            src="{% static 'common/icons/paper/paper_default.png' %}"
+            src="../common/icons/paper/paper_default.png"
             alt="paper"
             class="cardImg"
           />
@@ -126,10 +130,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='{% url 'paper_energy' %}' "
+          onclick="window.location.href='./detail/biomed.html' "
         >
           <img
-            src="{% static 'common/icons/biomed/biomed_default.png' %}"
+            src="../common/icons/biomed/biomed_default.png"
             alt="biomed"
             class="cardImg"
           />
@@ -142,10 +146,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='{% url 'melting_energy' %}' "
+          onclick="window.location.href='./detail/melting.html' "
         >
           <img
-            src="{% static 'common/icons/melting/melting_default.png' %}"
+            src="../common/icons/melting/melting_default.png"
             alt="melting"
             class="cardImg"
           />
