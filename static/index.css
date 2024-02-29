@@ -147,10 +147,12 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18.2px;
+
+  margin-bottom: 15px;
 }
 
 .infoHr {
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 .descriptionTitle {
