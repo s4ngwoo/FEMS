@@ -68,3 +68,5 @@ def melting_optimized(request):
     # Render the melting optimized page template
     return render(request, 'optimized/detail/melting.html')
 
+def food_seoul(request):
+    return render(request, 'energy/detail/food_map/seoul.html')

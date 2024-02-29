@@ -19,5 +19,7 @@ urlpatterns = [
     path('optimized/paper/', views.paper_optimized, name='paper_optimized'),  # 제지업종 최적화 기술
     path('optimized/biomed/', views.biomed_optimized, name='biomed_optimized'),  # 바이오의약업종 최적화 기술
     path('optimized/melting/', views.melting_optimized, name='melting_optimized'),  # 용해업종 최적화 기술
+    
+    path('energy/food/food_map/seoul', views.food_seoul, name='food_seoul'),
 ]
  
