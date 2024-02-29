@@ -4,123 +4,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="{% static 'industrial/detail/trends.css' %}" rel="stylesheet" />
+    <title>FEMS/industrial/expenditure</title>
+    <link
+      href="{% static 'industrial/detail/expenditure.css' %}"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="headerBackground">sdf</div>
-      <div class="topHeader">
-        <p class="topHeaderText">업종별</p>
-        <div class="topHeaderLine"></div>
-        <p class="topHeaderText">연락기관</p>
-      </div>
-      <div class="header" onclick="window.location.href='{% url 'landing' %}' ">
-        <p class="headerTitle">HERCULES</p>
-        <p class="headerSub">
-          Highly Energy Retrofittable management for<br />
-          factory-Customized and Ultimately Load-Efficient Solutions
-        </p>
-      </div>
-    </header>
-    <main>
-      <div class="title">에너지 가격동향</div>
-      <div class="contentWrapper">
-        <div class="content">
-          <p class="contentTitle">세계 에너지 시장 지표</p>
-          <div class="contentLine"></div>
-          <div class="contentItem">
-            <p class="contentText">천연가스(Henry Hub선물, $/MMBtu)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">천연가스(NBP선물, GBp/Thm)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">천연가스(JKM선물, $/MMBtu)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">천연가스(TTF선물, €/MWh)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">원유(WTI선물, $/bbl)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">원유(Brent선물, $/bbl)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">원유(Dubai현물, $/bbl)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">석탄($/Short ton)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
+    <div class="topHeader">
+      <img
+        src="{% static 'common/background.png' %}"
+        alt="background"
+        class="headerBackground"
+      />
+    </div>
+    <div class="header" onclick="window.location.href='{% url 'landing' %}' ">
+      <p class="headerTitle main">HERCULES</p>
+      <p class="headerSub">
+        Highly Energy Retrofittable management for<br />
+        factory-Customized and Ultimately Load-Efficient Solutions
+      </p>
+    </div>
+    <!-- title -->
+    <div class="title">
+      <div class="wrapper">
+        <div class="revolvePage">
+          업종별<br />
+          설비투자액 · 설비투자효율
         </div>
-        <div class="content">
-          <p class="contentTitle">세계 원유 수급 지표</p>
-          <div class="contentLine"></div>
-          <div class="contentItem">
-            <p class="contentText">세계석유 수요(백만b/d)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
+        <img
+          src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
+          alt="left"
+          class="arrow"
+          onclick="window.location.href='{% url 'investment' %}' "
+        />
+        <div class="currentPage">
+          <p class="name">
+            업종별<br />
+            경영 투자 현황
+          </p>
+        </div>
+        <img
+          src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+          alt="right"
+          class="arrow"
+          onclick="window.location.href='{% url 'revenue' %}' "
+        />
+        <div class="revolvePage">
+          업종별<br />
+          매출 · 생산액
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <!-- main -->
+    <main>
+      <div class="graph">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">업종별 설비투자액</div>
+        </div>
+        <canvas id="chart1"></canvas>
+        <canvas id="chart2"></canvas>
+        <canvas id="chart3"></canvas>
+        <canvas id="chart4"></canvas>
+      </div>
+      <div class="graph">
+        <div class="textBox">
+          <div class="rectangle"></div>
+          <div class="text">업종별 설비투자효율</div>
+        </div>
+        <div class="tableWrapper">
+          <div class="rowNameWrapper">
+            <div class="rowName">
+              <div class="rowCircle foodColor"></div>
+              식품 업종
+            </div>
+            <div class="rowName">
+              <div class="rowCircle paperColor"></div>
+              제지 업종
+            </div>
+            <div class="rowName">
+              <div class="rowCircle biomedColor"></div>
+              바이오의약
+            </div>
+            <div class="rowName">
+              <div class="rowCircle meltingColor"></div>
+              융해 업종
             </div>
           </div>
-          <div class="contentItem">
-            <p class="contentText">세계석유 공급(백만b/d)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
+          <table id="table">
+            <thead>
+              <tr>
+                <th>업종 전체 기대 당기이익 증가액<br />(백만원)</th>
+                <th>당기 이익 증가 비율<br />(%)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div
+          class="button"
+          onclick="window.location.href='{% url 'energy_trends' %}' "
+        >
+          <div class="buttonTextWrapper">
+            <div class="buttonTitle">에너지 가격 동향</div>
+            <div class="buttonLine"></div>
+            <div class="buttonSub">각 시장별 및 수급별 지표</div>
           </div>
-          <div class="contentItem">
-            <p class="contentText">세계석유 재고(백만bbl)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
-          <div class="contentItem">
-            <p class="contentText">우라늄($/lb)</p>
-            <div class="contentSubWrapper">
-              <p class="contentText">0.00</p>
-              <p class="contentSub">0.00</p>
-            </div>
-          </div>
+          <img
+            src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
+            alt=""
+          />
         </div>
       </div>
     </main>
     <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{% static 'industrial/detail/expenditure.js' %}"></script>
 </html>

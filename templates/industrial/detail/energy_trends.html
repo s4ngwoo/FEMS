@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="{% static 'industrial/detail/trends.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="headerBackground"></div>
+      <div class="topHeader">
+        <p class="topHeaderText">업종별</p>
+        <div class="topHeaderLine"></div>
+        <p class="topHeaderText">연락기관</p>
+      </div>
+      <div class="header" onclick="window.location.href='{% url 'landing' %}' ">
+        <p class="headerTitle">HERCULES</p>
+        <p class="headerSub">
+          Highly Energy Retrofittable management for<br />
+          factory-Customized and Ultimately Load-Efficient Solutions
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="title">에너지 가격동향</div>
+      <div class="contentWrapper">
+        <div class="content">
+          <p class="contentTitle">세계 에너지 시장 지표</p>
+          <div class="contentLine"></div>
+          <div class="contentItem">
+            <p class="contentText">천연가스(Henry Hub선물, $/MMBtu)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">천연가스(NBP선물, GBp/Thm)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">천연가스(JKM선물, $/MMBtu)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">천연가스(TTF선물, €/MWh)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">원유(WTI선물, $/bbl)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">원유(Brent선물, $/bbl)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">원유(Dubai현물, $/bbl)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">석탄($/Short ton)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="contentTitle">세계 원유 수급 지표</p>
+          <div class="contentLine"></div>
+          <div class="contentItem">
+            <p class="contentText">세계석유 수요(백만b/d)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">세계석유 공급(백만b/d)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">세계석유 재고(백만bbl)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+          <div class="contentItem">
+            <p class="contentText">우라늄($/lb)</p>
+            <div class="contentSubWrapper">
+              <p class="contentText">0.00</p>
+              <p class="contentSub">0.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
+  </body>
+</html>

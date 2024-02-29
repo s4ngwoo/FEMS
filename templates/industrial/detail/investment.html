@@ -4,9 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FEMS/industrial</title>
+    <title>FEMS/industrial/profitability</title>
     <link
-      href="{% static 'industrial/detail/investment.css' %}"
+      href="{% static 'industrial/detail/profitability.css' %}"
       rel="stylesheet"
     />
   </head>
@@ -31,34 +31,33 @@
       <div class="wrapper">
         <div class="revolvePage">
           업종별<br />
-          매출 · 생산액
+          매출 영업이익률 · 당기순이익
         </div>
         <img
           src="{% static 'common/icons/arrow/arrow_left_default.png' %}"
           alt="left"
           class="arrow"
-          onclick="window.location.href='{% url 'revenue' %}' "
+          onclick="window.location.href='{% url 'profitability' %}' "
         />
         <div class="currentPage">
           <p class="name">
             업종별<br />
-            매출 영업이익률 · 당기순이익
+            설비투자액 · 설비투자효율
           </p>
         </div>
         <img
           src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
           alt="right"
           class="arrow"
-          onclick="window.location.href='{% url 'profitability' %}' "
+          onclick="window.location.href='{% url 'trends' %}' "
         />
         <div class="revolvePage">
           업종별<br />
-          설비투자액 · 설비투자효율
+          경영 투자 현황
         </div>
       </div>
       <div class="line"></div>
     </div>
-    <!-- main -->
     <main>
       <div class="graph">
         <div class="textBox">
@@ -72,15 +71,18 @@
       <div class="graph">
         <div class="textBox">
           <div class="rectangle"></div>
-          <div class="text">업종별 당기순이익</div>
+          <div class="text">업종별 매출영업이익률</div>
         </div>
         <div class="chart-container">
           <canvas id="chart2"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="chart3"></canvas>
         </div>
       </div>
     </main>
     <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="{% static 'investment.js"></script>
+  <script src="{% static 'industrial/detail/profitability.js' %}"></script>
 </html>
