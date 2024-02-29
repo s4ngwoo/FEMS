@@ -1,3 +1,4 @@
+{% load static %}
 const map = {
   식료품제조업: {
     sum: 1125037,
@@ -26,11 +27,11 @@ $('#pageDropdown').change(function () {
   var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
 
   // 선택된 페이지 파일 로드
-  $('#pageContent').load('./food_map/' + selectedPage + '.html');
+  $('#pageContent').load('/food_map/' + selectedPage + '.html');
 });
 
 // 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
-$('#pageContent').load('./food_map/seoul.html');
+$('#pageContent').load('{% static 'food_map/seoul.html' %}');
 
 // grapph
 // // JSON 데이터
