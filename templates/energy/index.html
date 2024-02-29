@@ -98,10 +98,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='./detail/food.html' "
+          onclick="window.location.href='{% url 'food_energy' %}' "
         >
           <img
-            src="../common/icons/food/food_default.png"
+	    src="{% static '/common/icons/food/food_default.png' %}"
             alt="food"
             class="cardImg"
           />
@@ -114,10 +114,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='./detail/paper.html' "
+          onclick="window.location.href='{% url 'paper_energy' %}' "
         >
           <img
-            src="../common/icons/paper/paper_default.png"
+            src="{% static '/common/icons/paper/paper_default.png' %}"
             alt="paper"
             class="cardImg"
           />
@@ -130,10 +130,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='./detail/biomed.html' "
+          onclick="window.location.href='{% url 'biomed_energy' %}' "
         >
           <img
-            src="../common/icons/biomed/biomed_default.png"
+            src="{% static '/common/icons/biomed/biomed_default.png' %}"
             alt="biomed"
             class="cardImg"
           />
@@ -146,10 +146,10 @@
         </div>
         <div
           class="cardWrapper"
-          onclick="window.location.href='./detail/melting.html' "
+          onclick="window.location.href='{% url 'melting_energy' %}' "
         >
           <img
-            src="../common/icons/melting/melting_default.png"
+            src="{% static '/common/icons/melting/melting_default.png' %}"
             alt="melting"
             class="cardImg"
           />
