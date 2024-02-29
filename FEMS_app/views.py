@@ -28,21 +28,25 @@ def industrial_overview(request):
     # Render the industrial overview page template
     return render(request, 'industrial/index.html')
 
-def sales_production_industrial(request):
+def sales_production_industrial(request): # 매출 생산액
     # Render the sales production page template
     return render(request, 'industrial/detail/revenue.html')
 
-def profit_industrial(request):
-    # Render the profit page template
+def profit_industrial(request): # 매출 영업이익률 · 당기순이익 
+    # Render the profit page template 
     return render(request, 'industrial/detail/profitability.html')
 
-def investment_industrial(request):
+def investment_industrial(request):  # 설비투자액 · 설비투자효율
     # Render the investment page template
-    return render(request, 'industrial/detail/expenditure.html')
+    return render(request, 'industrial/detail/investment.html')
 
-def management_investment_industrial(request):
+def management_investment_industrial(request): # 경영 투자 현황
     # Render the management investment page template
     return render(request, 'industrial/detail/trends.html')
+
+def energy_trends_industrial(request):
+    # Render the management investment page template
+    return render(request, 'industrial/detail/energy_trends.html')
 
 def optimized_overview(request):
     # Render the optimized overview page template
