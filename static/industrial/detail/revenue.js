@@ -64,6 +64,8 @@ const datasets = Object.keys(salesData).map((key, index) => ({
   label: key,
   data: Object.values(salesData[key]),
   borderColor: colors[index],
+  backgroundColor: colors[index],
+  borderWidth: 0.5,
   fill: false,
 }));
 
@@ -72,6 +74,21 @@ const config = {
   data: {
     labels: labels,
     datasets: datasets,
+  },
+  options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
   },
 };
 
@@ -141,6 +158,8 @@ const datasets2 = Object.keys(data).map((key, index) => ({
   label: key,
   data: Object.values(data[key]),
   borderColor: colors[index],
+  backgroundColor: colors[index],
+  borderWidth: 0.5,
   fill: false,
 }));
 
@@ -149,6 +168,22 @@ const config2 = {
   data: {
     labels: labels2,
     datasets: datasets2,
+  },
+
+  options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
   },
 };
 
