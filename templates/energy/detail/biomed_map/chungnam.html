@@ -9,8 +9,16 @@
   <body>
     <div class="pageItemWrapper">
       <div class="pagecontent">
-        <img src="{% static 'energy/map/map_chungnam.png' %}" alt="chungnam" class="map" />
-        <p class="pageItem" id="item"></p>
+        <img
+          src="{% static 'energy/map/map_chungnam.png' %}"
+          alt="chungnam"
+          class="map"
+        />
+        <div class="pageItem chungnam">
+          <img src="{% static 'energy/images/ping.png' %}" alt="ping" />
+          <p class="pageName">충남</p>
+          <p class="pageNum" id="item"></p>
+        </div>
       </div>
       <div class="chart">
         <div class="textBox">
