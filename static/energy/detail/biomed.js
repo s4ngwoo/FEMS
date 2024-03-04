@@ -32,10 +32,10 @@ script.onload = function () {
   // Dropdown 변경 이벤트 처리
   $('#pageDropdown').change(function () {
     var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
-    console.log(selectedPage);
+    console.log('./biomed_map/' + selectedPage);
 
     // 선택된 페이지 파일 로드
-    $('#pageContent').load('/biomed_map/' + selectedPage + '.html');
+    $('#pageContent').load('./biomed_map/' + selectedPage);
   });
 
   // 페이지 로드 시 초기 페이지 설정 (옵션의 첫 번째 페이지로 설정)
@@ -204,7 +204,7 @@ const data = {
       전력: 26004.0,
       합계: 43064.0,
     },
-    기타: {
+    전력: {
       석탄류: 0,
       석유류: 169,
       도시가스: 455,
