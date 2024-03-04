@@ -125,6 +125,11 @@ var combinedChart = new Chart(ctx, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
+      },
+    },
     scales: {
       y: {
         stacked: true, // 누적 막대 그래프 설정
@@ -257,6 +262,11 @@ const myChart = new Chart(ctx2, {
     })),
   },
   options: {
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
+      },
+    },
     scales: {
       y: {
         stacked: true,
