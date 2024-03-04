@@ -253,37 +253,69 @@ td {
   top: 68px;
   left: 75px;
 }
-.incheong {
+.incheon {
+  top: 64px;
+  left: 34px;
 }
 .gyeonggi {
+  top: 108px;
+  left: 95px;
 }
 .gangwon {
+  top: 70px;
+  left: 180px;
 }
 .gyeongbuk {
+  top: 190px;
+  left: 230px;
 }
 .gyeongnam {
+  top: 300px;
+  left: 160px;
 }
 .jeonbuk {
+  top: 260px;
+  left: 60px;
 }
 .jeonnam {
+  top: 340px;
+  left: 70px;
 }
 .gwangju {
+  top: 300px;
+  left: 40px;
 }
 .chungbuk {
+  top: 140px;
+  left: 120px;
 }
 .chungnam {
+  top: 180px;
+  left: 40px;
 }
 .sejong {
+  top: 160px;
+  left: 80px;
 }
 .daejeon {
+  top: 180px;
+  left: 100px;
 }
 .daegu {
+  top: 230px;
+  left: 200px;
 }
 .busan {
+  top: 295px;
+  left: 230px;
 }
 .ulsan {
+  top: 260px;
+  left: 250px;
 }
 .jeju {
+  top: 430px;
+  left: 60px;
 }
 
 .chart {
