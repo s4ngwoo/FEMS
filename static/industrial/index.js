@@ -251,7 +251,7 @@ new Chart(ctx, {
 	responsive: false,
     scales: {
       y: {
-        beginAtZero: true,
+        beginAtZero: false,
       },
     },
   },
