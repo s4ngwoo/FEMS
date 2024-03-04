@@ -9,8 +9,16 @@
   <body>
     <div class="pageItemWrapper">
       <div class="pagecontent">
-        <img src="{% static 'energy/map/map_daegu.png' %}" alt="daegu" class="map" />
-        <p class="pageItem" id="item"></p>
+        <img
+          src="{% static 'energy/map/map_daegu.png' %}"
+          alt="daegu"
+          class="map"
+        />
+        <div class="pageItem daegu">
+          <img src="{% static 'energy/images/ping.png' %}" alt="ping" />
+          <p class="pageName">대구</p>
+          <p class="pageNum" id="item"></p>
+        </div>
       </div>
       <div class="chart">
         <div class="textBox">
@@ -94,7 +102,7 @@
 
     $(document).ready(function () {
       // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
-      $('#item').append('대구 에너지 소비량: ' + daeguValue);
+      $('#item').append(daeguValue);
     });
   </script>
 </html>

@@ -125,6 +125,11 @@ var combinedChart = new Chart(combinedChartCanvas, {
         },
       },
     },
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
+      },
+    },
   },
 });
 
@@ -254,6 +259,11 @@ var combinedChart = new Chart(combinedChartCanvas, {
         ticks: {
           beginAtZero: true,
         },
+      },
+    },
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
       },
     },
   },
@@ -386,6 +396,11 @@ var combinedChart = new Chart(combinedChartCanvas, {
         },
       },
     },
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
+      },
+    },
   },
 });
 
@@ -514,6 +529,11 @@ var combinedChart = new Chart(combinedChartCanvas, {
         ticks: {
           beginAtZero: true,
         },
+      },
+    },
+    plugins: {
+      legend: {
+        onClick: (e, legendItem, legend) => {},
       },
     },
   },

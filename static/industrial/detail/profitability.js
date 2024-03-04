@@ -72,6 +72,8 @@ const datasets = Object.keys(data1).map((key, index) => ({
   label: key,
   data: Object.values(data1[key]),
   borderColor: colors[index],
+  backgroundColor: colors[index],
+  borderWidth: 0.5,
   fill: false,
 }));
 
@@ -80,6 +82,21 @@ const config = {
   data: {
     labels: labels,
     datasets: datasets,
+  },
+  options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
   },
 };
 
@@ -124,6 +141,8 @@ const datasets2 = Object.keys(data2).map((key, index) => ({
   label: key,
   data: Object.values(data2[key]),
   borderColor: colors[index],
+  backgroundColor: colors[index],
+  borderWidth: 0.5,
   fill: false,
 }));
 
@@ -132,6 +151,21 @@ const config2 = {
   data: {
     labels: labels2,
     datasets: datasets2,
+  },
+  options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
   },
 };
 
@@ -176,6 +210,8 @@ const datasets3 = Object.keys(data3).map((key, index) => ({
   label: key,
   data: Object.values(data3[key]),
   borderColor: colors[index],
+  backgroundColor: colors[index],
+  borderWidth: 0.5,
   fill: false,
 }));
 
@@ -184,6 +220,21 @@ const config3 = {
   data: {
     labels: labels3,
     datasets: datasets3,
+  },
+  options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
   },
 };
 

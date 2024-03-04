@@ -208,22 +208,82 @@ td {
   flex-direction: column;
 }
 
-.pagecontent {
-  display: flex;
-  flex-direction: column;
-}
-
 .pageItemWrapper {
   display: flex;
   flex-direction: row;
 }
 
+.pagecontent {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
 .pageItem {
-  margin: 20px auto;
   font-family: pretendard;
   font-weight: 400;
   font-size: 11px;
   color: var(--gray-light);
+
+  position: absolute;
+}
+
+.pageName {
+  position: absolute;
+  top: 10.5px;
+  left: 8.5px;
+  color: white;
+}
+
+.pageNum {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  color: white;
+  background-color: var(--food-color);
+  padding: 1px 4.5px;
+  border-radius: 5px;
+}
+
+/* 지역 위치 */
+.seoul {
+  top: 68px;
+  left: 75px;
+}
+.incheong {
+}
+.gyeonggi {
+}
+.gangwon {
+}
+.gyeongbuk {
+}
+.gyeongnam {
+}
+.jeonbuk {
+}
+.jeonnam {
+}
+.gwangju {
+}
+.chungbuk {
+}
+.chungnam {
+}
+.sejong {
+}
+.daejeon {
+}
+.daegu {
+}
+.busan {
+}
+.ulsan {
+}
+.jeju {
 }
 
 .chart {
