@@ -40,10 +40,7 @@
             </thead>
             <tbody></tbody>
           </table>
-          <p class="cardDescription">
-            총 <span id="totalValue" class="bold"></span> 명의 종업원이
-            있습니다.
-          </p>
+
           <table id="table3">
             <thead id="tableChart1">
               <tr>
@@ -61,8 +58,8 @@
     </div>
   </body>
   <script>
-    const gyeongnamPerson = personData.gyeongnam;
-    const gyeongnamCompany = companyData.gyeongnam;
+    let gyeongnamPerson = personData.gyeongnam;
+    let gyeongnamCompany = companyData.gyeongnam;
 
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = gyeongnamPerson;

@@ -40,10 +40,7 @@
             </thead>
             <tbody></tbody>
           </table>
-          <p class="cardDescription">
-            총 <span id="totalValue" class="bold"></span> 명의 종업원이
-            있습니다.
-          </p>
+
           <table id="table3">
             <thead id="tableChart1">
               <tr>
@@ -61,9 +58,9 @@
     </div>
   </body>
   <script>
-    const incheonValue = map.식료품제조업.incheon;
-    const incheonPerson = personData.incheon;
-    const incheonCompany = companyData.incheon;
+    let incheonValue = map.식료품제조업.incheon;
+    let incheonPerson = personData.incheon;
+    let incheonCompany = companyData.incheon;
 
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = incheonPerson;

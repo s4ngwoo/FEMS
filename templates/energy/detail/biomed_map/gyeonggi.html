@@ -1,4 +1,4 @@
-bs{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,10 +41,6 @@ bs{% load static %}
             </thead>
             <tbody></tbody>
           </table>
-          <p class="cardDescription">
-            총 <span id="totalValue" class="bold"></span> 명의 종업원이
-            있습니다.
-          </p>
           <table id="table3">
             <thead id="tableChart1">
               <tr>
@@ -63,9 +59,9 @@ bs{% load static %}
     </div>
   </body>
   <script>
-    const gyeonggiValue = map['의료용 물질 및 의약품 제조업'].gyeonggi;
-    const gyeonggiPerson = personData.gyeonggi;
-    const gyeonggiCompany = companyData.gyeonggi;
+    let gyeonggiValue = map['의료용 물질 및 의약품 제조업'].gyeonggi;
+    let gyeonggiPerson = personData.gyeonggi;
+    let gyeonggiCompany = companyData.gyeonggi;
 
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = gyeonggiPerson;

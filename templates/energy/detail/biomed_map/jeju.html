@@ -40,10 +40,7 @@ bs{% load static %}
             </thead>
             <tbody></tbody>
           </table>
-          <p class="cardDescription">
-            총 <span id="totalValue" class="bold"></span> 명의 종업원이
-            있습니다.
-          </p>
+
           <table id="table3">
             <thead id="tableChart1">
               <tr>
@@ -61,9 +58,9 @@ bs{% load static %}
     </div>
   </body>
   <script>
-    const jejuValue = map['의료용 물질 및 의약품 제조업'].jeju;
-    const jejuPerson = personData.jeju;
-    const jejuCompany = companyData.jeju;
+    let jejuValue = map['의료용 물질 및 의약품 제조업'].jeju;
+    let jejuPerson = personData.jeju;
+    let jejuCompany = companyData.jeju;
 
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = jejuPerson;
