@@ -65,6 +65,10 @@ new Chart(ctx, {
     datasets: datasets,
   },
   options: {
+    legend: {
+      display: true,
+      onClick: (e, legendItem, legend) => {},
+    },
     scales: {
       y: {
         type: 'linear',
