@@ -98,10 +98,18 @@ function drawLineChart(labels, datasets) {
       datasets: datasets,
     },
     options: {
+      legend: {
+        display: true,
+        onClick: (e, legendItem, legend) => {},
+      },
       scales: {
-        y: {
-          beginAtZero: true,
-        },
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
       },
     },
   });
