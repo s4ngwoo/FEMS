@@ -68,29 +68,7 @@ def melting_optimized(request):
     # Render the melting optimized page template
     return render(request, 'optimized/detail/melting.html')
 
-def food_seoul(request):
-    return render(request, 'energy/detail/food_map/seoul.html')
+def city_map(request, category, sub, city):
+    template_name = f'energy/detail/{category}_map/{city}.html'
+    return render(request, template_name)
 
-def paper_seoul(request):
-    return render(request, 'energy/detail/paper_map/seoul.html')
-
-def melting_seoul(request):
-    return render(request, 'energy/detail/melting_map/seoul.html')
-
-def biomed_seoul(request):
-    return render(request, 'energy/detail/biomed_map/seoul.html')
-
-def food_incheon(request):
-    return render(request, 'energy/detail/food_map/incheon.html')
-
-#def food_map(request, city_name):
-    #return render(request, 'energy/detail/food_map/{city_name}.html')
-#
-#def paper_map(request, city_name):
-    #return render(request, 'energy/detail/paper_map/{city_name}.html')
-#
-#def biomed_map(request, city_name):
-    #return render(request, 'energy/detail/biomed_map/{city_name}.html')
-#
-#def melting_map(request, city_name):
-    #return render(request, 'energy/detail/melting_map/{city_name}.html')
