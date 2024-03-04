@@ -113,6 +113,7 @@ var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',
   data: combinedChartData,
   options: {
+	responsive: false,
     scales: {
       y1: {
         position: 'right',
@@ -243,6 +244,7 @@ var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',
   data: combinedChartData2,
   options: {
+	responsive: false,
     scales: {
       y1: {
         position: 'right',
@@ -372,6 +374,7 @@ var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',
   data: combinedChartData3,
   options: {
+	responsive: false,
     scales: {
       y1: {
         position: 'right',
@@ -501,6 +504,7 @@ var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',
   data: combinedChartData4,
   options: {
+	responsive: false,
     scales: {
       y1: {
         position: 'right',

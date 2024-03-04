@@ -248,6 +248,7 @@ new Chart(ctx, {
     datasets: datasets,
   },
   options: {
+	responsive: false,
     scales: {
       y: {
         beginAtZero: true,
