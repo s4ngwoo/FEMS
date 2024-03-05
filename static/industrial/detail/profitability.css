@@ -131,6 +131,20 @@ main {
   grid-template-rows: 29px 1fr 1fr;
 }
 
+.chart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-container > p {
+  margin: 20px 0;
+
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.13px;
+}
+
 /* textBox */
 .textBox {
   display: flex;
