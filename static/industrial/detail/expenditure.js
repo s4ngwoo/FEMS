@@ -111,7 +111,7 @@ const combinedChartData = {
 var combinedChartCanvas = document.getElementById('chart1').getContext('2d');
 const canvas = document.getElementById('chart1');
 canvas.width = 463;
-canvas.height = 253;
+canvas.height = 368;
 
 var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',

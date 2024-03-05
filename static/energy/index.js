@@ -27,6 +27,9 @@ const data = {
 
 // 그래프를 그릴 캔버스 요소 가져오기
 const ctx = document.getElementById('chart1').getContext('2d');
+const canvas = document.getElementById('chart1');
+canvas.width = 431;
+canvas.height = 253;
 
 // 라벨(연도)와 데이터(값)를 분리
 const labels = Object.keys(data);
@@ -65,6 +68,8 @@ new Chart(ctx, {
     datasets: datasets,
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     legend: {
       display: true,
       onClick: (e, legendItem, legend) => {},

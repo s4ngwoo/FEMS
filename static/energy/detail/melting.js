@@ -65,6 +65,9 @@ labels.forEach(function (label) {
 
 // Canvas 엘리먼트 가져오기
 var ctx = document.getElementById('meltingChart').getContext('2d');
+const canvas1 = document.getElementById('meltingChart');
+canvas1.width = 325;
+canvas1.height = 250;
 
 // 누적 막대 그래프와 꺾은선 그래프 생성
 var combinedChart = new Chart(ctx, {
@@ -102,6 +105,8 @@ var combinedChart = new Chart(ctx, {
     ],
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
@@ -230,6 +235,10 @@ const dataset = fuels.map(fuel => ({
 
 // 그래프 그리기
 const ctx2 = document.getElementById('foodChart2').getContext('2d');
+const canvas2 = document.getElementById('foodChart2');
+canvas2.width = 325;
+canvas2.height = 300;
+
 const myChart = new Chart(ctx2, {
   type: 'bar',
   data: {
@@ -244,6 +253,8 @@ const myChart = new Chart(ctx2, {
     })),
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
