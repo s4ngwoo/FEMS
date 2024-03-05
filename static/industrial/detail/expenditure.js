@@ -94,7 +94,7 @@ const combinedChartData = {
       backgroundColor: 'rgba(10, 122, 204, 0.5)',
       borderColor: 'rgba(10, 122, 204, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
     {
       type: 'bar',
@@ -103,19 +103,34 @@ const combinedChartData = {
       backgroundColor: 'rgba(255, 122, 0, 0.5)',
       borderColor: 'rgba(255, 122, 0, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
   ],
 };
 
 var combinedChartCanvas = document.getElementById('chart1').getContext('2d');
+const canvas = document.getElementById('chart1');
+canvas.width = 463;
+canvas.height = 253;
+
 var combinedChart = new Chart(combinedChartCanvas, {
   type: 'bar',
   data: combinedChartData,
   options: {
-	responsive: false,
+    responsive: false,
+    maintainAspectRatio: false,
     scales: {
+      y2: {
+        title: {
+          display: true,
+          text: '에너지 비용 (백만원)',
+        },
+      },
       y1: {
+        title: {
+          display: true,
+          text: '에너지 비용 제조비용 구성비 (%)',
+        },
         position: 'right',
         grid: {
           display: false,
@@ -230,7 +245,7 @@ const combinedChartData2 = {
       backgroundColor: 'rgba(10, 122, 204, 0.5)',
       borderColor: 'rgba(10, 122, 204, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
     {
       type: 'bar',
@@ -239,19 +254,34 @@ const combinedChartData2 = {
       backgroundColor: 'rgba(255, 122, 0, 0.5)',
       borderColor: 'rgba(255, 122, 0, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
   ],
 };
 
-var combinedChartCanvas = document.getElementById('chart2').getContext('2d');
-var combinedChart = new Chart(combinedChartCanvas, {
+var combinedChartCanvas2 = document.getElementById('chart2').getContext('2d');
+const canvas2 = document.getElementById('chart2');
+canvas2.width = 463;
+canvas2.height = 253;
+
+var combinedChart2 = new Chart(combinedChartCanvas2, {
   type: 'bar',
   data: combinedChartData2,
   options: {
-	responsive: false,
+    responsive: false,
+    maintainAspectRatio: false,
     scales: {
+      y2: {
+        title: {
+          display: true,
+          text: '에너지 비용 (백만원)',
+        },
+      },
       y1: {
+        title: {
+          display: true,
+          text: '에너지 비용 제조비용 구성비 (%)',
+        },
         position: 'right',
         grid: {
           display: false,
@@ -365,7 +395,7 @@ const combinedChartData3 = {
       backgroundColor: 'rgba(10, 122, 204, 0.5)',
       borderColor: 'rgba(10, 122, 204, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
     {
       type: 'bar',
@@ -374,19 +404,34 @@ const combinedChartData3 = {
       backgroundColor: 'rgba(255, 122, 0, 0.5)',
       borderColor: 'rgba(255, 122, 0, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
   ],
 };
 
-var combinedChartCanvas = document.getElementById('chart3').getContext('2d');
-var combinedChart = new Chart(combinedChartCanvas, {
+var combinedChartCanvas3 = document.getElementById('chart3').getContext('2d');
+const canvas3 = document.getElementById('chart3');
+canvas3.width = 463;
+canvas3.height = 253;
+
+var combinedChart3 = new Chart(combinedChartCanvas3, {
   type: 'bar',
   data: combinedChartData3,
   options: {
-	responsive: false,
+    responsive: false,
+    maintainAspectRatio: false,
     scales: {
+      y2: {
+        title: {
+          display: true,
+          text: '에너지 비용 (백만원)',
+        },
+      },
       y1: {
+        title: {
+          display: true,
+          text: '에너지 비용 제조비용 구성비 (%)',
+        },
         position: 'right',
         grid: {
           display: false,
@@ -500,7 +545,7 @@ const combinedChartData4 = {
       backgroundColor: 'rgba(10, 122, 204, 0.5)',
       borderColor: 'rgba(10, 122, 204, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
     {
       type: 'bar',
@@ -509,19 +554,34 @@ const combinedChartData4 = {
       backgroundColor: 'rgba(255, 122, 0, 0.5)',
       borderColor: 'rgba(255, 122, 0, 0.5)',
       borderWidth: 1,
-      yAxisID: 'y-axis-0',
+      yAxisID: 'y2',
     },
   ],
 };
 
-var combinedChartCanvas = document.getElementById('chart4').getContext('2d');
-var combinedChart = new Chart(combinedChartCanvas, {
+var combinedChartCanvas4 = document.getElementById('chart4').getContext('2d');
+const canvas4 = document.getElementById('chart4');
+canvas4.width = 463;
+canvas4.height = 263;
+
+var combinedChart4 = new Chart(combinedChartCanvas4, {
   type: 'bar',
   data: combinedChartData4,
   options: {
-	responsive: false,
+    responsive: false,
+    maintainAspectRatio: false,
     scales: {
+      y2: {
+        title: {
+          display: true,
+          text: '에너지 비용 (백만원)',
+        },
+      },
       y1: {
+        title: {
+          display: true,
+          text: '에너지 비용 제조비용 구성비 (%)',
+        },
         position: 'right',
         grid: {
           display: false,
