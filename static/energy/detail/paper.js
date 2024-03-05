@@ -88,6 +88,9 @@ labels.forEach(function (label) {
 
 // Canvas 엘리먼트 가져오기
 var ctx = document.getElementById('foodChart').getContext('2d');
+const canvas1 = document.getElementById('foodChart');
+canvas1.width = 325;
+canvas1.height = 250;
 
 // 누적 막대 그래프와 꺾은선 그래프 생성
 var combinedChart = new Chart(ctx, {
@@ -125,6 +128,8 @@ var combinedChart = new Chart(ctx, {
     ],
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
@@ -134,9 +139,17 @@ var combinedChart = new Chart(ctx, {
       y: {
         stacked: true, // 누적 막대 그래프 설정
         beginAtZero: true,
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
       },
       y1: {
         position: 'right',
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
         grid: {
           display: false,
         },
@@ -245,6 +258,10 @@ const dataset = fuels.map(fuel => ({
 
 // 그래프 그리기
 const ctx2 = document.getElementById('foodChart2').getContext('2d');
+const canvas2 = document.getElementById('foodChart2');
+canvas2.width = 325;
+canvas2.height = 300;
+
 const myChart = new Chart(ctx2, {
   type: 'bar',
   data: {
@@ -259,6 +276,8 @@ const myChart = new Chart(ctx2, {
     })),
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
@@ -268,9 +287,17 @@ const myChart = new Chart(ctx2, {
       y: {
         stacked: true,
         beginAtZero: true,
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
       },
       y1: {
         position: 'right',
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
         grid: {
           display: false,
         },
@@ -308,124 +335,124 @@ const table2Data = {
 };
 
 const companyData = {
-  seoul: {
-    '0~10인': 20,
-    '11~50인': 21,
-    '51~150인': 4,
-    '150인 이상': 1,
-    총합계: 46,
-  },
-  busan: {
-    '0~10인': 5,
-    '11~50인': 7,
-    '51~150인': 4,
-    '150인 이상': 2,
-    총합계: 18,
-  },
-  daegu: {
-    '0~10인': 9,
-    '11~50인': 8,
-    '51~150인': 1,
-    '150인 이상': 0,
-    총합계: 18,
-  },
-  incheon: {
-    '0~10인': 7,
-    '11~50인': 5,
-    '51~150인': 4,
-    '150인 이상': 4,
-    총합계: 20,
-  },
-  gwangju: {
-    '0~10인': 1,
-    '11~50인': 1,
-    '51~150인': 0,
-    '150인 이상': 0,
-    총합계: 2,
-  },
-  daejeon: {
-    '0~10인': 14,
-    '11~50인': 8,
-    '51~150인': 11,
-    '150인 이상': 3,
-    총합계: 36,
-  },
-  ulsan: {
-    '0~10인': 1,
-    '11~50인': 1,
-    '51~150인': 1,
-    '150인 이상': 0,
-    총합계: 3,
-  },
-  sejong: {
-    '0~10인': 3,
-    '11~50인': 4,
-    '51~150인': 2,
-    '150인 이상': 4,
-    총합계: 13,
+  gangwon: {
+    대기업: 0,
+    소기업: 41,
+    중견기업: 0,
+    중기업: 3,
+    총합계: 44,
   },
   gyeonggi: {
-    '0~10인': 77,
-    '11~50인': 108,
-    '51~150인': 43,
-    '150인 이상': 21,
-    총합계: 249,
-  },
-  chungbuk: {
-    '0~10인': 23,
-    '11~50인': 50,
-    '51~150인': 28,
-    '150인 이상': 14,
-    총합계: 115,
-  },
-  chungnam: {
-    '0~10인': 22,
-    '11~50인': 16,
-    '51~150인': 8,
-    '150인 이상': 6,
-    총합계: 52,
-  },
-  jeonbuk: {
-    '0~10인': 14,
-    '11~50인': 8,
-    '51~150인': 4,
-    '150인 이상': 1,
-    총합계: 27,
-  },
-  jeonnam: {
-    '0~10인': 12,
-    '11~50인': 10,
-    '51~150인': 2,
-    '150인 이상': 0,
-    총합계: 24,
-  },
-  gyeongbuk: {
-    '0~10인': 22,
-    '11~50인': 8,
-    '51~150인': 6,
-    '150인 이상': 0,
-    총합계: 36,
+    대기업: 6,
+    소기업: 1787,
+    중견기업: 1,
+    중기업: 96,
+    총합계: 1890,
   },
   gyeongnam: {
-    '0~10인': 6,
-    '11~50인': 2,
-    '51~150인': 0,
-    '150인 이상': 0,
-    총합계: 8,
+    대기업: 2,
+    소기업: 245,
+    중견기업: 0,
+    중기업: 17,
+    총합계: 264,
+  },
+  gyeongbuk: {
+    대기업: 1,
+    소기업: 262,
+    중견기업: 0,
+    중기업: 17,
+    총합계: 280,
+  },
+  gwangju: {
+    대기업: 0,
+    소기업: 49,
+    중견기업: 0,
+    중기업: 5,
+    총합계: 54,
+  },
+  daegu: {
+    대기업: 2,
+    소기업: 146,
+    중견기업: 1,
+    중기업: 16,
+    총합계: 165,
+  },
+  daejeon: {
+    대기업: 1,
+    소기업: 24,
+    중견기업: 0,
+    중기업: 6,
+    총합계: 31,
+  },
+  busan: {
+    대기업: 0,
+    소기업: 129,
+    중견기업: 0,
+    중기업: 7,
+    총합계: 136,
+  },
+  seoul: {
+    대기업: 0,
+    소기업: 164,
+    중견기업: 0,
+    중기업: 2,
+    총합계: 166,
+  },
+  sejong: {
+    대기업: 0,
+    소기업: 17,
+    중견기업: 0,
+    중기업: 4,
+    총합계: 21,
+  },
+  ulsan: {
+    대기업: 2,
+    소기업: 34,
+    중견기업: 0,
+    중기업: 3,
+    총합계: 39,
+  },
+  incheon: {
+    대기업: 0,
+    소기업: 144,
+    중견기업: 0,
+    중기업: 6,
+    총합계: 150,
+  },
+  jeonnam: {
+    대기업: 0,
+    소기업: 99,
+    중견기업: 0,
+    중기업: 3,
+    총합계: 102,
+  },
+  jeonbuk: {
+    대기업: 1,
+    소기업: 111,
+    중견기업: 0,
+    중기업: 10,
+    총합계: 122,
   },
   jeju: {
-    '0~10인': 0,
-    '11~50인': 2,
-    '51~150인': 0,
-    '150인 이상': 0,
-    총합계: 2,
+    대기업: 0,
+    소기업: 19,
+    중견기업: 0,
+    중기업: 0,
+    총합계: 19,
   },
-  gangwon: {
-    '0~10인': 12,
-    '11~50인': 13,
-    '51~150인': 6,
-    '150인 이상': 4,
-    총합계: 35,
+  chungnam: {
+    대기업: 3,
+    소기업: 207,
+    중견기업: 0,
+    중기업: 26,
+    총합계: 236,
+  },
+  chungbuk: {
+    대기업: 5,
+    소기업: 233,
+    중견기업: 1,
+    중기업: 23,
+    총합계: 262,
   },
 };
 

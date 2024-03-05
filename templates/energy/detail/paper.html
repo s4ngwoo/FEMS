@@ -69,14 +69,13 @@
     <!-- 추가 -->
     <!-- main -->
 
-
     <main>
       <div class="graph">
         <div class="textBox">
           <div class="rectangle"></div>
           <div class="text">구간별 에너지 소비</div>
         </div>
-        <canvas id="foodChart" style="width: 611px; height: 402.34px"></canvas>
+        <canvas id="foodChart"></canvas>
         <table id="table">
           <thead>
             <tr>
@@ -95,7 +94,7 @@
           <div class="rectangle"></div>
           <div class="text">설비별-에너지원별<br />에너지 소비 구성</div>
         </div>
-        <canvas id="foodChart2" style="width: 545px; height: 402.34px"></canvas>
+        <canvas id="foodChart2"></canvas>
       </div>
       <div class="pageWrapper">
         <div class="textBox">
@@ -104,31 +103,32 @@
             식품 업종 시도별 에너지 다소비 사업장<br />
             (2,000toe이상) 에너지소비량 (2021)
           </div>
-		    <select id="pageDropdown" class="dropDown">
-      <option value="seoul">서울</option>
-      <option value="incheon">인천</option>
-      <option value="gyeonggi">경기</option>
-      <option value="gangwon">강원</option>
-      <option value="gyeongbuk">경북</option>
-      <option value="gyeongnam">경남</option>
-      <option value="jeonbuk">전북</option>
-      <option value="jeonnam">전남</option>
-      <option value="gwangju">광주</option>
-      <option value="chungbuk">충북</option>
-      <option value="chungnam">충남</option>
-      <option value="sejong">세종</option>
-      <option value="daejeon">대전</option>
-      <option value="daegu">대구</option>
-      <option value="busan">부산</option>
-      <option value="ulsan">울산</option>
-      <option value="jeju">제주</option>
-    </select>
+          <select id="pageDropdown" class="dropDown">
+            <option value="seoul">서울</option>
+            <option value="incheon">인천</option>
+            <option value="gyeonggi">경기</option>
+            <option value="gangwon">강원</option>
+            <option value="gyeongbuk">경북</option>
+            <option value="gyeongnam">경남</option>
+            <option value="jeonbuk">전북</option>
+            <option value="jeonnam">전남</option>
+            <option value="gwangju">광주</option>
+            <option value="chungbuk">충북</option>
+            <option value="chungnam">충남</option>
+            <option value="sejong">세종</option>
+            <option value="daejeon">대전</option>
+            <option value="daegu">대구</option>
+            <option value="busan">부산</option>
+            <option value="ulsan">울산</option>
+            <option value="jeju">제주</option>
+          </select>
         </div>
         <div id="pageContent">
           <!-- 선택된 페이지에 따라 내용이 이곳에 표시 -->
         </div>
       </div>
     </main>
+    <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
   <script src="{% static 'energy/detail/paper.js' %}"></script>
