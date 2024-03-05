@@ -75,7 +75,7 @@ new Chart(ctx, {
         display: true,
         title: {
           display: true,
-          text: '1000 toe',
+          text: '단위 추가',
           size: 16,
         },
       },

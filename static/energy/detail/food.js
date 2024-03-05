@@ -134,9 +134,17 @@ var combinedChart = new Chart(ctx, {
       y: {
         stacked: true, // 누적 막대 그래프 설정
         beginAtZero: true,
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
       },
       y1: {
         position: 'right',
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
         grid: {
           display: false,
         },
@@ -271,9 +279,17 @@ const myChart = new Chart(ctx2, {
       y: {
         stacked: true,
         beginAtZero: true,
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
       },
       y1: {
         position: 'right',
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
         grid: {
           display: false,
         },

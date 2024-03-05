@@ -100,13 +100,15 @@ const config = {
       onClick: (e, legendItem, legend) => {},
     },
     scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
+      y: {
+        ticks: {
+          beginAtZero: true,
         },
-      ],
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
+      },
     },
   },
 };
@@ -198,13 +200,15 @@ const config2 = {
       onClick: (e, legendItem, legend) => {},
     },
     scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
+      y: {
+        ticks: {
+          beginAtZero: true,
         },
-      ],
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
+      },
     },
   },
 };
