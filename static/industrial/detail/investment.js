@@ -95,6 +95,8 @@ const config = {
     datasets: datasets,
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     legend: {
       display: true,
       onClick: (e, legendItem, legend) => {},
@@ -112,6 +114,10 @@ const config = {
     },
   },
 };
+
+const canvas1 = document.getElementById('chart1');
+canvas1.width = 463;
+canvas1.height = 312;
 
 var myChart = new Chart(document.getElementById('chart1'), config);
 
@@ -195,6 +201,8 @@ const config2 = {
     datasets: datasets2,
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     legend: {
       display: true,
       onClick: (e, legendItem, legend) => {},
@@ -212,5 +220,9 @@ const config2 = {
     },
   },
 };
+
+const canvas2 = document.getElementById('chart2');
+canvas2.width = 463;
+canvas2.height = 312;
 
 var myChart2 = new Chart(document.getElementById('chart2'), config2);

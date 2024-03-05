@@ -109,6 +109,10 @@ for (const [key, value] of Object.entries(data)) {
 console.log(datasets);
 
 var ctx = document.getElementById('chart1').getContext('2d');
+const canvas1 = document.getElementById('chart1');
+canvas1.width = 545;
+canvas1.height = 368;
+
 new Chart(ctx, {
   type: 'line',
   data: {
@@ -117,6 +121,7 @@ new Chart(ctx, {
   },
   options: {
     responsive: false,
+    maintainAspectRatio: false,
     scales: {
       y: {
         title: {

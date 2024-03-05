@@ -262,7 +262,7 @@ const combinedChartData2 = {
 var combinedChartCanvas2 = document.getElementById('chart2').getContext('2d');
 const canvas2 = document.getElementById('chart2');
 canvas2.width = 463;
-canvas2.height = 253;
+canvas2.height = 368;
 
 var combinedChart2 = new Chart(combinedChartCanvas2, {
   type: 'bar',
@@ -412,7 +412,7 @@ const combinedChartData3 = {
 var combinedChartCanvas3 = document.getElementById('chart3').getContext('2d');
 const canvas3 = document.getElementById('chart3');
 canvas3.width = 463;
-canvas3.height = 253;
+canvas3.height = 368;
 
 var combinedChart3 = new Chart(combinedChartCanvas3, {
   type: 'bar',
@@ -562,7 +562,7 @@ const combinedChartData4 = {
 var combinedChartCanvas4 = document.getElementById('chart4').getContext('2d');
 const canvas4 = document.getElementById('chart4');
 canvas4.width = 463;
-canvas4.height = 263;
+canvas4.height = 368;
 
 var combinedChart4 = new Chart(combinedChartCanvas4, {
   type: 'bar',
