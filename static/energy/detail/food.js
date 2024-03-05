@@ -32,7 +32,6 @@ script.onload = function () {
   // Dropdown 변경 이벤트 처리
   $('#pageDropdown').change(function () {
     var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
-    console.log('./food_map/' + selectedPage);
 
     // 선택된 페이지 파일 로드
     $('#pageContent').load('./food_map/' + selectedPage);

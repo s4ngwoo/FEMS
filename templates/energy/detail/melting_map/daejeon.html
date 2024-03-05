@@ -9,7 +9,11 @@
   <body>
     <div class="pageItemWrapper">
       <div class="pagecontent">
-        <img src="{% static 'energy/map/map_daejeon.png' %}" alt="daejeon" class="map" />
+        <img
+          src="{% static 'energy/map/map_daejeon.png' %}"
+          alt="daejeon"
+          class="map"
+        />
         <p class="pageItem" id="item"></p>
       </div>
       <div class="chart">
@@ -31,11 +35,13 @@
               </p>
             </div>
             <div class="cardBoldLine"></div>
+            <p class="cardUnderLine">종업원 규모별 기업수</p>
           </div>
           <table id="table2">
             <thead id="tableChart1">
               <tr>
                 <th>종업원수</th>
+                <th>해당 종업원<br />규모 기업수</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -45,9 +51,10 @@
             <thead id="tableChart1">
               <tr>
                 <th>규모별 기업수</th>
-                <th></th>
+                <th>해당 종업원<br />규모 기업수</th>
               </tr>
             </thead>
+
             <tbody id="tbody3"></tbody>
           </table>
           <p class="cardDescription">
