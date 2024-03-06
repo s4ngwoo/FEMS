@@ -131,14 +131,14 @@ var combinedChart = new Chart(ctx, {
         beginAtZero: true,
         title: {
           display: true,
-          text: '단위 추가',
+          text: '단위: TOE',
         },
       },
       y1: {
         position: 'right',
         title: {
           display: true,
-          text: '단위 추가',
+          text: '단위: 개',
         },
         grid: {
           display: false,
@@ -279,20 +279,7 @@ const myChart = new Chart(ctx2, {
         beginAtZero: true,
         title: {
           display: true,
-          text: '단위 추가',
-        },
-      },
-      y1: {
-        position: 'right',
-        title: {
-          display: true,
-          text: '단위 추가',
-        },
-        grid: {
-          display: false,
-        },
-        ticks: {
-          beginAtZero: true,
+          text: '단위: TOE',
         },
       },
     },
