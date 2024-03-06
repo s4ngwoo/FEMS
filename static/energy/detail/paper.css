@@ -144,7 +144,7 @@ main {
 }
 
 .dropDown {
-  margin: 30px 0 0 24px;
+  margin: 5px 0 0 0;
 }
 
 /* graph */
@@ -202,6 +202,10 @@ td {
   margin: 50px auto;
 }
 
+.tableDescription2 {
+  color: var(--gray-light);
+  margin: 10px 0;
+}
 /* pagecontent */
 .pageWrapper {
   display: flex;
