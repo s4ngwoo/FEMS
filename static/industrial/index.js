@@ -126,7 +126,7 @@ new Chart(ctx, {
       y: {
         title: {
           display: true,
-          text: '단위 추가',
+          text: '생산 지수',
         },
         beginAtZero: true,
       },
