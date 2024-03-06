@@ -129,6 +129,16 @@ main {
   flex-direction: column;
   width: 50%;
 }
+.graphDescription {
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13.13px;
+  color: var(--gray-light);
+
+  text-align: center;
+  margin: 10px 0 50px;
+}
 
 /* textBox */
 .textBox {
