@@ -68,12 +68,22 @@ new Chart(ctx, {
     datasets: datasets,
   },
   options: {
+    plugins: {
+      legend: {
+	labels: {
+	  display: true,
+	  onClick: (e, legendItem, legend) => {},
+	  usePointStyle: true,
+	  boxWidth: 3,
+	},
+      },
+    },
     responsive: false,
     maintainAspectRatio: false,
-    legend: {
-      display: true,
-      onClick: (e, legendItem, legend) => {},
-    },
+    //legend: {
+      //display: true,
+      //onClick: (e, legendItem, legend) => {},
+    //},
     scales: {
       y: {
         type: 'linear',

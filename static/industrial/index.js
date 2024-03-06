@@ -120,6 +120,16 @@ new Chart(ctx, {
     datasets: datasets,
   },
   options: {
+   plugins: {
+       legend: {
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 3,
+         },
+       },
+     }, 
     responsive: false,
     maintainAspectRatio: false,
     scales: {
@@ -128,7 +138,7 @@ new Chart(ctx, {
           display: true,
           text: '생산 지수',
         },
-        beginAtZero: true,
+        beginAtZero: false,
       },
     },
   },

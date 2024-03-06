@@ -84,6 +84,16 @@ const config = {
     datasets: datasets,
   },
   options: {
+    plugins: {
+       legend: {
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 5,
+         },
+       },
+     },
     responsive: false,
     maintainAspectRatio: false,
     legend: {
@@ -161,6 +171,16 @@ const config2 = {
     datasets: datasets2,
   },
   options: {
+    plugins: {
+       legend: {
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 5,
+         },
+       },
+     },
     responsive: false,
     maintainAspectRatio: false,
     legend: {
@@ -238,6 +258,16 @@ const config3 = {
     datasets: datasets3,
   },
   options: {
+    plugins: {
+       legend: {
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 5,
+         },
+       },
+     },
     responsive: false,
     maintainAspectRatio: false,
     legend: {
