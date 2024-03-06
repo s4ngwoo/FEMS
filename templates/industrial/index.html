@@ -49,14 +49,17 @@
     <!-- 새로 추가 한 부분 -->
     <main>
       <div class="graph">
-        <p class="graphDescription">
-          업종별 분기별 생산지수 추이[2020년 전체제조업 생산지수 100기준]<br />
-          출처통계청,「광업제조업동향조사」, 2023.11, 2024.01.28, 시도/산업별
-          광공업생산지수(2020=100)
-        </p>
+        <div class="textBox">
+          <div class="textRectangular"></div>
+          <p class="textTitle">업종별 분기별 생산지수 추이[2020년 전체제조업 생산지수 100기준]</p>
+        </div>
         <div class="chart-container">
           <canvas id="chart1"></canvas>
         </div>
+		<p class="graphDescription">
+          통계청,「광업제조업동향조사」, 2023.11, 2024.01.28, 시도/산업별
+          광공업생산지수(2020=100)
+        </p>
       </div>
       <div class="buttonWrapper">
         <div
