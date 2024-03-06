@@ -365,6 +365,10 @@ td {
   background-color: var(--paper-color);
 }
 
+.cardUnderLine {
+  margin-top: 5px;
+}
+
 .cardDescription {
   font-family: pretendard;
   font-weight: 500;

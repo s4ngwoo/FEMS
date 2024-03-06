@@ -76,21 +76,29 @@ const config = {
     datasets: datasets,
   },
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     legend: {
       display: true,
       onClick: (e, legendItem, legend) => {},
     },
     scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
+      y: {
+        ticks: {
+          beginAtZero: true,
         },
-      ],
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
+      },
     },
   },
 };
+
+const canvas1 = document.getElementById('chart1');
+canvas1.width = 463;
+canvas1.height = 312;
 
 var myChart = new Chart(document.getElementById('chart1'), config);
 
@@ -171,20 +179,28 @@ const config2 = {
   },
 
   options: {
+    responsive: false,
+    maintainAspectRatio: false,
     legend: {
       display: true,
       onClick: (e, legendItem, legend) => {},
     },
     scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
+      y: {
+        ticks: {
+          beginAtZero: true,
         },
-      ],
+        title: {
+          display: true,
+          text: '단위 추가',
+        },
+      },
     },
   },
 };
+
+const canvas2 = document.getElementById('chart2');
+canvas2.width = 463;
+canvas2.height = 312;
 
 var myChart2 = new Chart(document.getElementById('chart2'), config2);

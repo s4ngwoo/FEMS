@@ -159,7 +159,10 @@
 .tableWrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: flex-end;
+
+  margin-top: 20px;
 }
 
 table {
@@ -177,20 +180,33 @@ th {
   color: var(--gray-light);
 }
 
+td {
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+
 .rowNameWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 109px;
   height: 113px;
   border-right: 1px solid var(--gray-hard);
+  margin-bottom: 6px;
 }
 
 .rowName {
   display: flex;
   flex-direction: row;
   gap: 6px;
+
+  font-family: pretendard;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.71px;
 }
 
 .rowCircle {
@@ -289,4 +305,14 @@ th {
   position: absolute;
   top: 15px;
   left: -38.1px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 51px;
 }

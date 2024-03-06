@@ -49,15 +49,14 @@
     <!-- 새로 추가 한 부분 -->
     <main>
       <div class="graph">
-        <div class="chart-container">
-          <canvas id="chart1" style="width: 545px; height: 368px"></canvas>
-        </div>
         <p class="graphDescription">
-          출처 : 업종별 분기별 생산지수 추이[2020년 전체제조업 생산지수
-          100기준]<br />
+          업종별 분기별 생산지수 추이[2020년 전체제조업 생산지수 100기준]<br />
           출처통계청,「광업제조업동향조사」, 2023.11, 2024.01.28, 시도/산업별
           광공업생산지수(2020=100)
         </p>
+        <div class="chart-container">
+          <canvas id="chart1"></canvas>
+        </div>
       </div>
       <div class="buttonWrapper">
         <div
@@ -67,7 +66,9 @@
           <div class="buttonTextWrapper">
             <div class="buttonTitle">업종별 매출 · 생산액</div>
             <div class="buttonLine"></div>
-            <div class="buttonSub">제조업 4개업종 매출액 및 생산액 추이 자료</div>
+            <div class="buttonSub">
+              제조업 4개업종 매출액 및 생산액 추이 자료
+            </div>
           </div>
           <img
             src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
@@ -81,7 +82,9 @@
           <div class="buttonTextWrapper">
             <div class="buttonTitle">업종별 매출 영업이익률 · 당기순이익</div>
             <div class="buttonLine"></div>
-            <div class="buttonSub">제조업 4개업종 매출 영업이익률 및 당기순이익 추이 자료</div>
+            <div class="buttonSub">
+              제조업 4개업종 매출 영업이익률 및 당기순이익 추이 자료
+            </div>
           </div>
           <img
             src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
@@ -95,7 +98,9 @@
           <div class="buttonTextWrapper">
             <div class="buttonTitle">업종별 설비투자액 · 설비투자효율</div>
             <div class="buttonLine"></div>
-            <div class="buttonSub">제조업 4개업종 설비 투자액 및 설비투자효율 자료</div>
+            <div class="buttonSub">
+              제조업 4개업종 설비 투자액 및 설비투자효율 자료
+            </div>
           </div>
           <img
             src="{% static 'common/icons/arrow/arrow_right_default.png' %}"
@@ -119,7 +124,8 @@
       </div>
     </main>
     <img src="{% static 'map2.png' %}" alt="map" class="map" />
+    <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
   <script src="{% static 'industrial/index.js' %}"></script>
 </html>

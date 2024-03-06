@@ -273,6 +273,10 @@ td {
   background-color: var(--melting-color);
 }
 
+.cardUnderLine {
+  margin-top: 5px;
+}
+
 .cardDescription {
   font-family: pretendard;
   font-weight: 500;
