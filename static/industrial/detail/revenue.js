@@ -89,7 +89,7 @@ const config = {
         },
         title: {
           display: true,
-          text: '단위 추가',
+          text: '단위: 억원',
         },
       },
     },
@@ -192,7 +192,7 @@ const config2 = {
         },
         title: {
           display: true,
-          text: '단위 추가',
+          text: '단위: 억원',
         },
       },
     },

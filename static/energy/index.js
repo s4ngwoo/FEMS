@@ -80,7 +80,7 @@ new Chart(ctx, {
         display: true,
         title: {
           display: true,
-          text: '단위 추가',
+          text: '단위: TOE',
           size: 16,
         },
       },
