@@ -16,6 +16,26 @@
   cursor: pointer;
 }
 
+.pageName {
+  position: absolute;
+  top: 10.5px;
+  left: 8.5px;
+  color: white;
+}
+
+.pageNum {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  color: white;
+  background-color: var(--melting-color);
+  padding: 1px 4.5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
 .topHeader {
   width: 100%;
   height: 62px;

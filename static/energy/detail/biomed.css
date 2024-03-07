@@ -247,9 +247,10 @@ td {
   transform: translate(-50%, 0%);
 
   color: white;
-  background-color: var(--food-color);
+  background-color: var(--biomed-color);
   padding: 1px 4.5px;
   border-radius: 5px;
+  font-size: large;
 }
 
 /* 지역 위치 */
