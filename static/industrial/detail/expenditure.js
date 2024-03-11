@@ -62,6 +62,10 @@ const foodData = {
   },
 };
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 const years = Object.keys(foodData['전력비']);
 
 const combinedChartData = {
@@ -638,7 +642,7 @@ for (const key in constants) {
     const row = document.createElement('tr');
 
     const cell2 = document.createElement('td');
-    cell2.textContent = rowData['업종 전체 기대 당기이익 증가액'];
+    cell2.textContent = numberWithCommas(rowData['업종 전체 기대 당기이익 증가액']);
     row.appendChild(cell2);
 
     const cell3 = document.createElement('td');
