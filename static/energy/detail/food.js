@@ -1,26 +1,3 @@
-const map = {
-  식료품제조업: {
-    sum: 1125037,
-    seoul: 10980,
-    busan: 35153,
-    daegu: 19387,
-    incheon: 158459,
-    gwangju: 14986,
-    daejeon: 9904,
-    ulsan: 29302,
-    sejong: null,
-    gyeonggi: 275340,
-    gangwon: 29613,
-    chungbuk: 163719,
-    chungnam: 97906,
-    jeonbuk: 160310,
-    jeonnam: 24082,
-    gyeongbuk: 36348,
-    gyeongnam: 49882,
-    jeju: null,
-  },
-};
-
 // jQuery 로드
 var script = document.createElement('script');
 script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
@@ -306,6 +283,28 @@ const myChart = new Chart(ctx2, {
 });
 
 // table2
+const map = {
+  식료품제조업: {
+    sum: 1125037,
+    seoul: 10980,
+    busan: 35153,
+    daegu: 19387,
+    incheon: 158459,
+    gwangju: 14986,
+    daejeon: 9904,
+    ulsan: 29302,
+    sejong: null,
+    gyeonggi: 275340,
+    gangwon: 29613,
+    chungbuk: 163719,
+    chungnam: 97906,
+    jeonbuk: 160310,
+    jeonnam: 24082,
+    gyeongbuk: 36348,
+    gyeongnam: 49882,
+    jeju: null,
+  },
+};
 
 const personData = {
   seoul: {
@@ -550,3 +549,71 @@ const companyData = {
     총합계: 1577,
   },
 };
+
+let seoulValue = map.식료품제조업.seoul;
+let seoulPerson = personData.seoul;
+let seoulCompany = companyData.seoul;
+
+let busanValue = map.식료품제조업.busan;
+let busanPerson = personData.busan;
+let busanCompany = companyData.busan;
+
+let chungbukValue = map.식료품제조업.chungbuk;
+let chungbukPerson = personData.chungbuk;
+let chungbukCompany = companyData.chungbuk;
+
+let chungnamValue = map.식료품제조업.chungnam;
+let chungnamPerson = personData.chungnam;
+let chungnamCompany = companyData.chungnam;
+
+let daeguValue = map.식료품제조업.daegu;
+let daeguPerson = personData.daegu;
+let daeguCompany = companyData.daegu;
+
+let daejeonValue = map.식료품제조업.daejeon;
+let daejeonPerson = personData.daejeon;
+let daejeonCompany = companyData.daejeon;
+
+let gangwonValue = map.식료품제조업.gangwon;
+let gangwonPerson = personData.gangwon;
+let gangwonCompany = companyData.gangwon;
+
+let gwangjuValue = map.식료품제조업.gwangju;
+let gwangjuPerson = personData.gwangju;
+let gwangjuCompany = companyData.gwangju;
+
+let gyeongbukValue = map.식료품제조업.gyeongbuk;
+let gyeongbukPerson = personData.gyeongbuk;
+let gyeongbukCompany = companyData.gyeongbuk;
+
+let gyeonggiValue = map.식료품제조업.gyeonggi;
+let gyeonggiPerson = personData.gyeonggi;
+let gyeonggiCompany = companyData.gyeonggi;
+
+let gyeongnamValue = map.식료품제조업.gyeongnam;
+let gyeongnamPerson = personData.gyeongnam;
+let gyeongnamCompany = companyData.gyeongnam;
+
+let incheonValue = map.식료품제조업.incheon;
+let incheonPerson = personData.incheon;
+let incheonCompany = companyData.incheon;
+
+let jejuValue = map.식료품제조업.jeju;
+let jejuPerson = personData.jeju;
+let jejuCompany = companyData.jeju;
+
+let jeonbukValue = map.식료품제조업.jeonbuk;
+let jeonbukPerson = personData.jeonbuk;
+let jeonbukCompany = companyData.jeonbuk;
+
+let jeonnamValue = map.식료품제조업.jeonnam;
+let jeonnamPerson = personData.jeonnam;
+let jeonnamCompany = companyData.jeonnam;
+
+let sejongValue = map.식료품제조업.sejong;
+let sejongPerson = personData.sejong;
+let sejongCompany = companyData.sejong;
+
+let ulsanValue = map.식료품제조업.ulsan;
+let ulsanPerson = personData.ulsan;
+let ulsanCompany = companyData.ulsan;
