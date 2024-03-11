@@ -70,19 +70,19 @@ new Chart(ctx, {
   options: {
     plugins: {
       legend: {
-	labels: {
-	  display: true,
-	  onClick: (e, legendItem, legend) => {},
-	  usePointStyle: true,
-	  boxWidth: 3,
-	},
+        labels: {
+          display: true,
+          onClick: (e, legendItem, legend) => {},
+          usePointStyle: true,
+          boxWidth: 3,
+        },
       },
     },
     responsive: false,
     maintainAspectRatio: false,
     //legend: {
-      //display: true,
-      //onClick: (e, legendItem, legend) => {},
+    //display: true,
+    //onClick: (e, legendItem, legend) => {},
     //},
     scales: {
       y: {
@@ -130,17 +130,21 @@ const constants = [
   },
 ];
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 var tableBody = document.querySelector('#table tbody');
 constants.forEach(function (item) {
   var row = document.createElement('tr');
   row.innerHTML =
     '<td>' +
-    item.식품 +
+    numberWithCommas(item.식품) +
     '</td><td>' +
-    item.제지 +
+    numberWithCommas(item.제지) +
     '</td><td>' +
-    item.바이오의약 +
+    numberWithCommas(item.바이오의약) +
     '</td><td>' +
-    item.용해;
+    numberWithCommas(item.용해);
   tableBody.appendChild(row);
 });

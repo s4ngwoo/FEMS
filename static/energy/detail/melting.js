@@ -118,15 +118,19 @@ var combinedChart = new Chart(ctx, {
 var tableBody = document.querySelector('#table tbody');
 var constants = jsonData.solvent;
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 for (item in constants) {
   var row = document.createElement('tr');
   row.innerHTML =
     '<td>' +
-    item +
+    numberWithCommas(item) +
     '</td><td>' +
-    constants[item].fuel +
+    numberWithCommas(constants[item].fuel) +
     '</td><td>' +
-    constants[item]['Number of Companies'] +
+    numberWithCommas(constants[item]['Number of Companies']) +
     '</td>';
   tableBody.appendChild(row);
 }
