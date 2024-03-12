@@ -17,7 +17,6 @@
         <div class="pageItem daejeon">
           <img src="{% static 'energy/images/ping.png' %}" alt="ping" />
           <p class="pageName">대전</p>
-          <p class="pageNum" id="item"></p>
         </div>
       </div>
       <div class="chart">
@@ -33,9 +32,7 @@
           <div>
             <div class="cardHeader">
               <p class="cardTitle">대전</p>
-              <p class="cardSub">
-                종업원 규모별 기업수
-              </p>
+              <p class="cardSub">종업원 규모별 기업수</p>
             </div>
             <div class="cardBoldLine"></div>
           </div>
@@ -52,7 +49,8 @@
           <table id="table3">
             <thead id="tableChart1">
               <tr>
-                <th>규모</th><th>해당 규모별 기업수</th>
+                <th>규모</th>
+                <th>해당 규모별 기업수</th>
               </tr>
             </thead>
             <tbody id="tbody3"></tbody>
@@ -65,10 +63,10 @@
     </div>
   </body>
   <script>
-  function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-  let daejeonPerson = personData.daejeon;
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+    let daejeonPerson = personData.daejeon;
     let daejeonCompany = companyData.daejeon;
 
     let tableBody2 = document.querySelector('#table2 tbody');
