@@ -125,9 +125,10 @@ main {
 }
 
 .graph {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 50%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 29px 1fr 1fr;
 }
 
 .graphDescription {
@@ -140,6 +141,20 @@ main {
   text-align: center;
   margin: 10px 0 50px;
 }
+.chart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-container > p {
+  margin: 20px 0;
+
+  font-family: pretendard;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.13px;
+}
+
 /* textBox */
 .textBox {
   display: flex;
@@ -152,8 +167,7 @@ main {
 
 .rectangle {
   width: 4px;
-  /* height: 19px; */
-  height: 100%;
+  height: 19px;
   background-color: var(--industry-color);
 }
 

@@ -460,6 +460,12 @@ var combinedChart3 = new Chart(combinedChartCanvas3, {
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 5,
+         },
       },
     },
   },
@@ -610,6 +616,12 @@ var combinedChart4 = new Chart(combinedChartCanvas4, {
     plugins: {
       legend: {
         onClick: (e, legendItem, legend) => {},
+         labels: {
+           display: true,
+           onClick: (e, legendItem, legend) => {},
+           usePointStyle: true,
+           boxWidth: 5,
+         },
       },
     },
   },
