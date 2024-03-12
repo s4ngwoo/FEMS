@@ -14,7 +14,10 @@
           alt="daegu"
           class="map"
         />
-        <p class="pageItem" id="item"></p>
+        <div class="pageItem daegu">
+          <img src="{% static 'energy/images/ping.png' %}" alt="ping" />
+          <p class="pageName">대구</p>
+        </div>
       </div>
       <div class="chart">
         <div class="textBox">
@@ -29,9 +32,7 @@
           <div>
             <div class="cardHeader">
               <p class="cardTitle">대구</p>
-              <p class="cardSub">
-                종업원 규모별 기업수
-              </p>
+              <p class="cardSub">종업원 규모별 기업수</p>
             </div>
             <div class="cardBoldLine"></div>
           </div>
@@ -48,7 +49,8 @@
           <table id="table3">
             <thead id="tableChart1">
               <tr>
-                <th>규모</th><th>해당 규모별 기업수</th>
+                <th>규모</th>
+                <th>해당 규모별 기업수</th>
               </tr>
             </thead>
 
@@ -62,37 +64,40 @@
     </div>
   </body>
   <script>
-    let daeguPerson = personData.daegu;
+  function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+  let daeguPerson = personData.daegu;
     let daeguCompany = companyData.daegu;
 
-    var tableBody2 = document.querySelector('#table2 tbody');
-    var constants2 = daeguPerson;
+    let tableBody2 = document.querySelector('#table2 tbody');
+    let constants2 = daeguPerson;
 
     for (table2Item in constants2) {
       if (table2Item !== '총합계') {
-        var row = document.createElement('tr');
+        let row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
         tableBody2.appendChild(row);
       }
     }
 
-    var total = constants2.총합계;
+    let total = constants2.총합계;
     $('#totalValue').text(total);
 
-    var tableBody3 = document.querySelector('#tbody3');
-    var constants3 = daeguCompany;
+    let tableBody3 = document.querySelector('#tbody3');
+    let constants3 = daeguCompany;
 
     for (table3Item in constants3) {
       if (table3Item !== '총합계') {
-        var row = document.createElement('tr');
+        let row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
         tableBody3.appendChild(row);
       }
     }
 
-    var total2 = constants3.총합계;
+    let total2 = constants3.총합계;
     $('#totalValue2').text(total2);
   </script>
 </html>

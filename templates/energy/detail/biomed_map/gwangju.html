@@ -65,7 +65,10 @@ bs{% load static %}
     </div>
   </body>
   <script>
-    var tableBody2 = document.querySelector('#table2 tbody');
+  function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+  var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = gwangjuPerson;
 
     for (table2Item in constants2) {
@@ -97,7 +100,7 @@ bs{% load static %}
 
     $(document).ready(function () {
       // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
-      $('#item').append(gwangjuValue);
+      $('#item').append(numberWithCommas(gwangjuValue));
     });
   </script>
 </html>

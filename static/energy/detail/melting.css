@@ -16,26 +16,6 @@
   cursor: pointer;
 }
 
-.pageName {
-  position: absolute;
-  top: 10.5px;
-  left: 8.5px;
-  color: white;
-}
-
-.pageNum {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-
-  color: white;
-  background-color: var(--melting-color);
-  padding: 1px 4.5px;
-  border-radius: 5px;
-  font-size: large;
-}
-
 .topHeader {
   width: 100%;
   height: 62px;
@@ -226,28 +206,193 @@ td {
   color: var(--gray-light);
   margin: 10px 0;
 }
+
 /* pagecontent */
-.pageWrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.pagecontent {
-  display: flex;
-  flex-direction: column;
-}
-
 .pageItemWrapper {
   display: flex;
   flex-direction: row;
 }
 
+.pagecontent {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
 .pageItem {
-  margin: 20px auto;
   font-family: pretendard;
   font-weight: 400;
   font-size: 11px;
   color: var(--gray-light);
+
+  position: absolute;
+}
+
+.pageName {
+  position: absolute;
+  top: 10.5px;
+  left: 8.5px;
+  color: white;
+}
+/* 지역 위치 */
+.seoul {
+  top: 68px;
+  left: 75px;
+}
+.incheon {
+  top: 64px;
+  left: 34px;
+}
+.gyeonggi {
+  top: 108px;
+  left: 95px;
+}
+.gangwon {
+  top: 70px;
+  left: 180px;
+}
+.gyeongbuk {
+  top: 190px;
+  left: 230px;
+}
+.gyeongnam {
+  top: 300px;
+  left: 160px;
+}
+.jeonbuk {
+  top: 260px;
+  left: 60px;
+}
+.jeonnam {
+  top: 340px;
+  left: 70px;
+}
+.gwangju {
+  top: 300px;
+  left: 40px;
+}
+.chungbuk {
+  top: 140px;
+  left: 120px;
+}
+.chungnam {
+  top: 180px;
+  left: 40px;
+}
+.sejong {
+  top: 160px;
+  left: 80px;
+}
+.daejeon {
+  top: 180px;
+  left: 100px;
+}
+.daegu {
+  top: 230px;
+  left: 200px;
+}
+.busan {
+  top: 295px;
+  left: 230px;
+}
+.ulsan {
+  top: 260px;
+  left: 250px;
+}
+.jeju {
+  top: 430px;
+  left: 60px;
+}
+
+.pageName {
+  position: absolute;
+  top: 10.5px;
+  left: 8.5px;
+  color: white;
+}
+
+.pageNum {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  color: white;
+  background-color: var(--melting-color);
+  padding: 1px 4.5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+/* 지역 위치 */
+.seoul {
+  top: 68px;
+  left: 75px;
+}
+.incheon {
+  top: 64px;
+  left: 34px;
+}
+.gyeonggi {
+  top: 108px;
+  left: 95px;
+}
+.gangwon {
+  top: 70px;
+  left: 180px;
+}
+.gyeongbuk {
+  top: 190px;
+  left: 230px;
+}
+.gyeongnam {
+  top: 300px;
+  left: 160px;
+}
+.jeonbuk {
+  top: 260px;
+  left: 60px;
+}
+.jeonnam {
+  top: 340px;
+  left: 70px;
+}
+.gwangju {
+  top: 300px;
+  left: 40px;
+}
+.chungbuk {
+  top: 140px;
+  left: 120px;
+}
+.chungnam {
+  top: 180px;
+  left: 40px;
+}
+.sejong {
+  top: 160px;
+  left: 80px;
+}
+.daejeon {
+  top: 180px;
+  left: 100px;
+}
+.daegu {
+  top: 230px;
+  left: 200px;
+}
+.busan {
+  top: 295px;
+  left: 230px;
+}
+.ulsan {
+  top: 260px;
+  left: 250px;
+}
+.jeju {
+  top: 430px;
+  left: 60px;
 }
 
 .chart {

@@ -4,9 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FEMS/industrial/expenditure</title>
+    <title>Trends</title>
     <link
-      href="{% static 'industrial/detail/expenditure.css' %}"
+      href="{% static 'industrial/detail/trends.css' %}"
       rel="stylesheet"
     />
   </head>
@@ -67,10 +67,22 @@
             업종별 전력비, 가스수도비 추이, 총 제조비용 구성 비율
           </div>
         </div>
-        <canvas id="chart1"></canvas>
-        <canvas id="chart2"></canvas>
-        <canvas id="chart3"></canvas>
-        <canvas id="chart4"></canvas>
+        <div class="chart-container">
+		<p><br>식품 업종</p>
+          <canvas id="chart1"></canvas>
+        </div>
+        <div class="chart-container">
+		<p><br>제지 업종</p>
+          <canvas id="chart2"></canvas>
+        </div>
+        <div class="chart-container">
+          <p><br>바이오의약</p>
+          <canvas id="chart3"></canvas>
+        </div>
+        <div class="chart-container">
+          <p><br>융해 업종</p>
+          <canvas id="chart4"></canvas>
+        </div>
         <p class="graphDescription">
 	한국은행,「기업경영분석」, 2022, 2024.01.28, 제조원가명세서(제10차 한국표준산업분류, 2009~)
 	</p>
@@ -130,5 +142,5 @@
     <footer>© 2024. (주)테라플랫폼, All rights reserved</footer>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
-  <script src="{% static 'industrial/detail/expenditure.js' %}"></script>
+  <script src="{% static 'industrial/detail/trends.js' %}"></script>
 </html>
