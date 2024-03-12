@@ -223,11 +223,13 @@ td {
 }
 
 .pageItem {
-  margin: 20px auto;
+  /* margin: 20px auto; */
   font-family: pretendard;
   font-weight: 400;
   font-size: 11px;
   color: var(--gray-light);
+
+  position: absolute;
 }
 
 .pageName {
