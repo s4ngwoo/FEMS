@@ -14,7 +14,11 @@
           alt="chungnam"
           class="map"
         />
-        <p class="pageItem" id="item"></p>
+        <div class="pageItem chungnam">
+          <img src="{% static 'energy/images/ping.png' %}" alt="ping" />
+          <p class="pageName">충남</p>
+          <p class="pageNum" id="item"></p>
+        </div>
       </div>
       <div class="chart">
         <div class="textBox">
@@ -29,9 +33,7 @@
           <div>
             <div class="cardHeader">
               <p class="cardTitle">충남</p>
-              <p class="cardSub">
-                종업원 규모별 기업수
-              </p>
+              <p class="cardSub">종업원 규모별 기업수</p>
             </div>
             <div class="cardBoldLine"></div>
           </div>
@@ -48,8 +50,7 @@
           <table id="table3">
             <thead id="tableChart1">
               <tr>
-                <th>규모</th><th>해당 규모별 기업수</th>
-              </tr>
+                <th>규모</th><th>해당 규모별 기업수</th></tr>
             </thead>
 
             <tbody id="tbody3"></tbody>
