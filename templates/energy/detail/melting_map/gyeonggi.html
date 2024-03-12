@@ -64,27 +64,30 @@
     </div>
   </body>
   <script>
-    let gyeonggiPerson = personData.gyeonggi;
+  function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+  let gyeonggiPerson = personData.gyeonggi;
     let gyeonggiCompany = companyData.gyeonggi;
 
-    var tableBody2 = document.querySelector('#table2 tbody');
-    var constants2 = gyeonggiPerson;
+    let tableBody2 = document.querySelector('#table2 tbody');
+    let constants2 = gyeonggiPerson;
 
     for (table2Item in constants2) {
       if (table2Item !== '총합계') {
-        var row = document.createElement('tr');
+        let row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
         tableBody2.appendChild(row);
       }
     }
 
-    var tableBody3 = document.querySelector('#tbody3');
-    var constants3 = gyeonggiCompany;
+    let tableBody3 = document.querySelector('#tbody3');
+    let constants3 = gyeonggiCompany;
 
     for (table3Item in constants3) {
       if (table3Item !== '총합계') {
-        var row = document.createElement('tr');
+        let row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
         tableBody3.appendChild(row);
