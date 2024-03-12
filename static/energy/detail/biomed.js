@@ -1,26 +1,3 @@
-const map = {
-  '의료용 물질 및 의약품 제조업': {
-    sum: 275566,
-    seoul: null,
-    busan: null,
-    daegu: null,
-    incheon: 61228,
-    gwangju: null,
-    daejeon: null,
-    ulsan: null,
-    sejong: null,
-    gyeonggi: 79222,
-    gangwon: null,
-    chungbuk: 76713,
-    chungnam: 28329,
-    jeonbuk: null,
-    jeonnam: null,
-    gyeongbuk: null,
-    gyeongnam: null,
-    jeju: null,
-  },
-};
-
 // jQuery 로드
 var script = document.createElement('script');
 script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
@@ -293,6 +270,29 @@ const myChart = new Chart(ctx2, {
   },
 });
 
+const map = {
+  '의료용 물질 및 의약품 제조업': {
+    sum: 275566,
+    seoul: null,
+    busan: null,
+    daegu: null,
+    incheon: 61228,
+    gwangju: null,
+    daejeon: null,
+    ulsan: null,
+    sejong: null,
+    gyeonggi: 79222,
+    gangwon: null,
+    chungbuk: 76713,
+    chungnam: 28329,
+    jeonbuk: null,
+    jeonnam: null,
+    gyeongbuk: null,
+    gyeongnam: null,
+    jeju: null,
+  },
+};
+
 const companyData = {
   gangwon: {
     소기업: 25,
@@ -536,3 +536,71 @@ const personData = {
     총합계: 35,
   },
 };
+
+let seoulValue = map['의료용 물질 및 의약품 제조업'].seoul;
+let seoulPerson = personData.seoul;
+let seoulCompany = companyData.seoul;
+
+let busanValue = map['의료용 물질 및 의약품 제조업'].busan;
+let busanPerson = personData.busan;
+let busanCompany = companyData.busan;
+
+let chungbukValue = map['의료용 물질 및 의약품 제조업'].chungbuk;
+let chungbukPerson = personData.chungbuk;
+let chungbukCompany = companyData.chungbuk;
+
+let chungnamValue = map['의료용 물질 및 의약품 제조업'].chungnam;
+let chungnamPerson = personData.chungnam;
+let chungnamCompany = companyData.chungnam;
+
+let daeguValue = map['의료용 물질 및 의약품 제조업'].daegu;
+let daeguPerson = personData.daegu;
+let daeguCompany = companyData.daegu;
+
+let daejeonValue = map['의료용 물질 및 의약품 제조업'].daejeon;
+let daejeonPerson = personData.daejeon;
+let daejeonCompany = companyData.daejeon;
+
+let gangwonValue = map['의료용 물질 및 의약품 제조업'].gangwon;
+let gangwonPerson = personData.gangwon;
+let gangwonCompany = companyData.gangwon;
+
+let gwangjuValue = map['의료용 물질 및 의약품 제조업'].gwangju;
+let gwangjuPerson = personData.gwangju;
+let gwangjuCompany = companyData.gwangju;
+
+let gyeongbukValue = map['의료용 물질 및 의약품 제조업'].gyeongbuk;
+let gyeongbukPerson = personData.gyeongbuk;
+let gyeongbukCompany = companyData.gyeongbuk;
+
+let gyeonggiValue = map['의료용 물질 및 의약품 제조업'].gyeonggi;
+let gyeonggiPerson = personData.gyeonggi;
+let gyeonggiCompany = companyData.gyeonggi;
+
+let gyeongnamValue = map['의료용 물질 및 의약품 제조업'].gyeongnam;
+let gyeongnamPerson = personData.gyeongnam;
+let gyeongnamCompany = companyData.gyeongnam;
+
+let incheonValue = map['의료용 물질 및 의약품 제조업'].incheon;
+let incheonPerson = personData.incheon;
+let incheonCompany = companyData.incheon;
+
+let jejuValue = map['의료용 물질 및 의약품 제조업'].jeju;
+let jejuPerson = personData.jeju;
+let jejuCompany = companyData.jeju;
+
+let jeonbukValue = map['의료용 물질 및 의약품 제조업'].jeonbuk;
+let jeonbukPerson = personData.jeonbuk;
+let jeonbukCompany = companyData.jeonbuk;
+
+let jeonnamValue = map['의료용 물질 및 의약품 제조업'].jeonnam;
+let jeonnamPerson = personData.jeonnam;
+let jeonnamCompany = companyData.jeonnam;
+
+let sejongValue = map['의료용 물질 및 의약품 제조업'].sejong;
+let sejongPerson = personData.sejong;
+let sejongCompany = companyData.sejong;
+
+let ulsanValue = map['의료용 물질 및 의약품 제조업'].ulsan;
+let ulsanPerson = personData.ulsan;
+let ulsanCompany = companyData.ulsan;

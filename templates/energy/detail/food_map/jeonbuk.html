@@ -33,9 +33,7 @@
           <div>
             <div class="cardHeader">
               <p class="cardTitle">전북</p>
-              <p class="cardSub">
-                종업원 규모별 기업수
-              </p>
+              <p class="cardSub">종업원 규모별 기업수</p>
             </div>
             <div class="cardBoldLine"></div>
           </div>
@@ -52,7 +50,8 @@
           <table id="table3">
             <thead id="tableChart1">
               <tr>
-                <th>규모</th><th>해당 규모별 기업수</th>
+                <th>규모</th>
+                <th>해당 규모별 기업수</th>
               </tr>
             </thead>
             <tbody id="tbody3"></tbody>
@@ -65,10 +64,6 @@
     </div>
   </body>
   <script>
-    let jeonbukValue = map.식료품제조업.jeonbuk;
-    let jeonbukPerson = personData.jeonbuk;
-    let jeonbukCompany = companyData.jeonbuk;
-
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = jeonbukPerson;
 
