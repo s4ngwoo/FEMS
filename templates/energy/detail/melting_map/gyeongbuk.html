@@ -68,34 +68,34 @@
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     }
 
-    let tableBody2 = document.querySelector('#table2 tbody');
-    let constants2 = gyeongbukPerson;
+    var tableBody2 = document.querySelector('#table2 tbody');
+    var constants2 = gyeongbukPerson;
 
     for (table2Item in constants2) {
       if (table2Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
         tableBody2.appendChild(row);
       }
     }
 
-    let total = constants2.총합계;
+    var total = constants2.총합계;
     $('#totalValue').text(total);
 
-    let tableBody3 = document.querySelector('#tbody3');
-    let constants3 = gyeongbukCompany;
+    var tableBody3 = document.querySelector('#tbody3');
+    var constants3 = gyeongbukCompany;
 
     for (table3Item in constants3) {
       if (table3Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
         tableBody3.appendChild(row);
       }
     }
 
-    let total2 = constants3.총합계;
+    var total2 = constants3.총합계;
     $('#totalValue2').text(total2);
   </script>
 </html>

@@ -65,14 +65,9 @@
     </div>
   </body>
   <script>
-  function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-  // let seoulValue = map.식료품제조업.seoul;
-    // let seoulPerson = personData.seoul;
-    // let seoulCompany = companyData.seoul;
-
-    // console.log(seoulValue);
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
 
     var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = seoulPerson;
