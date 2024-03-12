@@ -67,37 +67,37 @@
     function numberWithCommas(x) {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     }
-    let ulsanPerson = personData.ulsan;
-    let ulsanCompany = companyData.ulsan;
 
-    let tableBody2 = document.querySelector('#table2 tbody');
-    let constants2 = ulsanPerson;
+    var tableBody2 = document.querySelector('#table2 tbody');
 
-    for (table2Item in constants2) {
+    for (table2Item in ulsanPerson) {
       if (table2Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
+          '<td>' + table2Item + '</td><td>' + ulsanPerson[table2Item] + '</td>';
         tableBody2.appendChild(row);
       }
     }
 
-    let total = constants2.총합계;
-    $('#totalValue').text(total);
+    var ulsanPersonTotal = ulsanPerson.총합계;
+    $('#totalValue').text(ulsanPersonTotal);
 
-    let tableBody3 = document.querySelector('#tbody3');
-    let constants3 = ulsanCompany;
+    var tableBody3 = document.querySelector('#tbody3');
 
-    for (table3Item in constants3) {
+    for (table3Item in ulsanCompany) {
       if (table3Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
+          '<td>' +
+          table3Item +
+          '</td><td>' +
+          ulsanCompany[table3Item] +
+          '</td>';
         tableBody3.appendChild(row);
       }
     }
 
-    let total2 = constants3.총합계;
-    $('#totalValue2').text(total2);
+    var ulsanCompanyTotal = ulsanCompany.총합계;
+    $('#totalValue2').text(ulsanCompanyTotal);
   </script>
 </html>

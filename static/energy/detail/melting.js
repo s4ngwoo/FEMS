@@ -480,3 +480,54 @@ const personData = {
     총합계: 7,
   },
 };
+
+let seoulPerson = personData.seoul;
+let seoulCompany = companyData.seoul;
+
+let busanPerson = personData.busan;
+let busanCompany = companyData.busan;
+
+let chungbukPerson = personData.chungbuk;
+let chungbukCompany = companyData.chungbuk;
+
+let chungnamPerson = personData.chungnam;
+let chungnamCompany = companyData.chungnam;
+
+let daeguPerson = personData.daegu;
+let daeguCompany = companyData.daegu;
+
+let daejeonPerson = personData.daejeon;
+let daejeonCompany = companyData.daejeon;
+
+let gangwonPerson = personData.gangwon;
+let gangwonCompany = companyData.gangwon;
+
+let gwangjuPerson = personData.gwangju;
+let gwangjuCompany = companyData.gwangju;
+
+let gyeongbukPerson = personData.gyeongbuk;
+let gyeongbukCompany = companyData.gyeongbuk;
+
+let gyeonggiPerson = personData.gyeonggi;
+let gyeonggiCompany = companyData.gyeonggi;
+
+let gyeongnamPerson = personData.gyeongnam;
+let gyeongnamCompany = companyData.gyeongnam;
+
+let incheonPerson = personData.incheon;
+let incheonCompany = companyData.incheon;
+
+let jejuPerson = personData.jeju;
+let jejuCompany = companyData.jeju;
+
+let jeonbukPerson = personData.jeonbuk;
+let jeonbukCompany = companyData.jeonbuk;
+
+let jeonnamPerson = personData.jeonnam;
+let jeonnamCompany = companyData.jeonnam;
+
+let sejongPerson = personData.sejong;
+let sejongCompany = companyData.sejong;
+
+let ulsanPerson = personData.ulsan;
+let ulsanCompany = companyData.ulsan;
