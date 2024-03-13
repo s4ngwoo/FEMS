@@ -1,4 +1,4 @@
-bw{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,7 +74,7 @@ bw{% load static %}
       if (table2Item !== '총합계') {
         var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
+          '<td>' + numberWithCommas(table2Item) + '</td><td>' + numberWithCommas(constants2[table2Item]) + '</td>';
         tableBody2.appendChild(row);
       }
     }
@@ -86,7 +86,7 @@ bw{% load static %}
       if (table3Item !== '총합계') {
         var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
+          '<td>' + numberWithCommas(table3Item) + '</td><td>' + numberWithCommas(constants3[table3Item]) + '</td>';
         tableBody3.appendChild(row);
       }
     }

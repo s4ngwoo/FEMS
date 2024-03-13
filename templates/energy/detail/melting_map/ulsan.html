@@ -69,12 +69,13 @@
     }
 
     var tableBody2 = document.querySelector('#table2 tbody');
+    var constants2 = ulsanPerson;
 
     for (table2Item in ulsanPerson) {
       if (table2Item !== '총합계') {
         var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' + table2Item + '</td><td>' + ulsanPerson[table2Item] + '</td>';
+          '<td>' + numberWithCommas(table2Item) + '</td><td>' + numberWithCommas(constants2[table2Item]) + '</td>';
         tableBody2.appendChild(row);
       }
     }
@@ -83,21 +84,18 @@
     $('#totalValue').text(ulsanPersonTotal);
 
     var tableBody3 = document.querySelector('#tbody3');
+    var constants3 = busanCompany;
 
     for (table3Item in ulsanCompany) {
       if (table3Item !== '총합계') {
         var row = document.createElement('tr');
         row.innerHTML =
-          '<td>' +
-          table3Item +
-          '</td><td>' +
-          ulsanCompany[table3Item] +
-          '</td>';
+          '<td>' + numberWithCommas(table3Item) + '</td><td>' + numberWithCommas(constants3[table3Item]) + '</td>';
         tableBody3.appendChild(row);
       }
     }
 
-    var ulsanCompanyTotal = ulsanCompany.총합계;
-    $('#totalValue2').text(ulsanCompanyTotal);
+    var total2 = constants3.총합계;
+    $('#totalValue2').text(total2);
   </script>
 </html>
