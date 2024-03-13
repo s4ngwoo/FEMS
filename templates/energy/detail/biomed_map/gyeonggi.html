@@ -55,12 +55,10 @@
                 <th>해당 규모별 기업수</th>
               </tr>
             </thead>
-
             <tbody id="tbody3"></tbody>
           </table>
           <p class="cardDescription">
-            총 <span id="totalValue2" class="bold"></span> 명의 종업원이
-            있습니다.
+            총 <span id="totalValue2" class="bold"></span> 개 기업이 있습니다.
           </p>
         </div>
       </div>
@@ -93,6 +91,10 @@
         tableBody3.appendChild(row);
       }
     }
+
+    var total2 = constants3.총합계;
+    $('#totalValue2').text(total2);
+    console.log(constants3);
 
     $(document).ready(function () {
       // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.

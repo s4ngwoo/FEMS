@@ -9,7 +9,6 @@
   <body>
     <div class="pageItemWrapper">
       <div class="pagecontent">
-        <p id="gyeonggi"></p>
         <img
           src="{% static 'energy/map/map_gyeonggi.png' %}"
           alt="gyeonggi"
@@ -55,12 +54,10 @@
                 <th>해당 규모별 기업수</th>
               </tr>
             </thead>
-
             <tbody id="tbody3"></tbody>
           </table>
           <p class="cardDescription">
-            총 <span id="totalValue2" class="bold"></span> 명의 종업원이
-            있습니다.
+            총 <span id="totalValue2" class="bold"></span> 개 기업이 있습니다.
           </p>
         </div>
       </div>
@@ -70,29 +67,33 @@
   function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
-  let tableBody2 = document.querySelector('#table2 tbody');
-    let constants2 = gyeonggiPerson;
+  var tableBody2 = document.querySelector('#table2 tbody');
+    var constants2 = gyeonggiPerson;
 
     for (table2Item in constants2) {
       if (table2Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table2Item + '</td><td>' + constants2[table2Item] + '</td>';
         tableBody2.appendChild(row);
       }
     }
 
-    let tableBody3 = document.querySelector('#tbody3');
-    let constants3 = gyeonggiCompany;
+    var tableBody3 = document.querySelector('#tbody3');
+    var constants3 = gyeonggiCompany;
 
     for (table3Item in constants3) {
       if (table3Item !== '총합계') {
-        let row = document.createElement('tr');
+        var row = document.createElement('tr');
         row.innerHTML =
           '<td>' + table3Item + '</td><td>' + constants3[table3Item] + '</td>';
         tableBody3.appendChild(row);
       }
     }
+
+    var total2 = constants3.총합계;
+    $('#totalValue2').text(total2);
+    console.log(constants3);
 
     $(document).ready(function () {
       // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
