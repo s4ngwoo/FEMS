@@ -1,5 +1,5 @@
 // jQuery 로드
-var script = document.createElement('script');
+let script = document.createElement('script');
 script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
@@ -8,7 +8,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 script.onload = function () {
   // Dropdown 변경 이벤트 처리
   $('#pageDropdown').change(function () {
-    var selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
+    let selectedPage = $(this).val(); // 선택된 페이지 값 가져오기
     console.log('./paper_map/' + selectedPage);
 
     // 선택된 페이지 파일 로드
@@ -21,7 +21,7 @@ script.onload = function () {
 
 // grapph
 // // JSON 데이터
-var jsonData = {
+let jsonData = {
   paper: {
     '2~5k toe': {
       fuel: 24222,
@@ -53,10 +53,10 @@ var jsonData = {
 };
 
 // 데이터 분류
-var labels = Object.keys(jsonData.paper);
-var fuelData = [];
-var electricityData = [];
-var companiesData = [];
+let labels = Object.keys(jsonData.paper);
+let fuelData = [];
+let electricityData = [];
+let companiesData = [];
 labels.forEach(function (label) {
   fuelData.push(jsonData.paper[label].fuel);
   electricityData.push(jsonData.paper[label].Electricity);
@@ -64,13 +64,13 @@ labels.forEach(function (label) {
 });
 
 // Canvas 엘리먼트 가져오기
-var ctx = document.getElementById('foodChart').getContext('2d');
+let ctx = document.getElementById('foodChart').getContext('2d');
 const canvas1 = document.getElementById('foodChart');
 canvas1.width = 325;
 canvas1.height = 250;
 
 // 누적 막대 그래프와 꺾은선 그래프 생성
-var combinedChart = new Chart(ctx, {
+let combinedChart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: labels,
@@ -142,15 +142,15 @@ var combinedChart = new Chart(ctx, {
 });
 
 // table
-var tableBody = document.querySelector('#table tbody');
-var constants = jsonData.paper;
+let tableBody = document.querySelector('#table tbody');
+let constants = jsonData.paper;
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
 for (item in constants) {
-  var row = document.createElement('tr');
+  let row = document.createElement('tr');
   row.innerHTML =
     '<td>' +
     numberWithCommas(item) +
@@ -636,3 +636,6 @@ let sejongCompany = companyData.sejong;
 let ulsanValue = map['펄프, 종이 및 종이제품 제조업'].ulsan;
 let ulsanPerson = personData.ulsan;
 let ulsanCompany = companyData.ulsan;
+
+console.log(incheonPerson);
+console.log(incheonCompany);
