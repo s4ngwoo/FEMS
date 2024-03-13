@@ -65,13 +65,14 @@
     </div>
   </body>
   <script>
-  function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-  var tableBody2 = document.querySelector('#table2 tbody');
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    var tableBody2 = document.querySelector('#table2 tbody');
     var constants2 = seoulPerson;
 
-    for (table2Item in constants2) {
+    for (table2Item in seoulPerson) {
       if (table2Item !== '총합계') {
         var row = document.createElement('tr');
         row.innerHTML =
@@ -94,14 +95,15 @@
         tableBody3.appendChild(row);
       }
     }
-    console.log(constants3);
 
     var total2 = constants3.총합계;
     $('#totalValue2').text(total2);
 
-    $(document).ready(function () {
-      // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
-      $('#item').append(numberWithCommas(seoulValue));
-    });
+    if (seoulValue !== null) {
+      $(document).ready(function () {
+        // 데이터를 추가할 HTML 요소를 선택하고 데이터를 추가합니다.
+        $('#item').append(numberWithCommas(seoulValue));
+      });
+    }
   </script>
 </html>

@@ -325,6 +325,8 @@ const map = {
   },
 };
 
+console.log(map['펄프, 종이 및 종이제품 제조업']);
+
 const companyData = {
   gangwon: {
     소기업: 41,
